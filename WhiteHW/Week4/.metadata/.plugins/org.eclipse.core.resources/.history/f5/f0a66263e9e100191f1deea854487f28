@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+struct Student {
+	string first_name;
+	string last_name;
+	unsigned int day;
+	unsigned int month;
+	unsigned int year;
+};
+
+int main() {
+	int n;
+	cin >> n;
+	vector<Student> students(n);
+	for (auto& s : students) {
+		cin >> s.first_name >> s.last_name >> s.day >> s.month >> s.year;
+	}
+	int queue;
+	cin >> queue;
+	while (queue > 0) {
+		string q;
+		cin >> q;
+		if (q == "name") {
+
+		}
+		else if (q == "date") {
+
+		}
+		queue--;
+	}
+
+	return 0;
+}

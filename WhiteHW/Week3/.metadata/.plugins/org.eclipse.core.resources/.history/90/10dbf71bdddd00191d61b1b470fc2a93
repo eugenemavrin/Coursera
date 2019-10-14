@@ -1,0 +1,13 @@
+class SortedStrings {
+public:
+  void AddString(const string& s) {
+	  array.push_back(s);
+  }
+  vector<string> GetSortedStrings() {
+	  vector<string> x = array;
+	  sort(x.begin(), x.end());
+	  return x;
+  }
+private:
+  vector<string> array;
+};

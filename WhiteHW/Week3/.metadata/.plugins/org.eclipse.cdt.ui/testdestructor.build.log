@@ -1,0 +1,32 @@
+02:48:18 **** Build of configuration Debug for project testdestructor ****
+make all 
+Building file: ../src/testdestructor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testdestructor.d" -MT"src/testdestructor.o" -o "src/testdestructor.o" "../src/testdestructor.cpp"
+../src/testdestructor.cpp:29:12: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+    return {"clear", 10};
+           ^~~~~~~~~~~~~
+../src/testdestructor.cpp:29:12: error: non-aggregate type 'Weather' cannot be initialized with an initializer list
+    return {"clear", 10};
+           ^~~~~~~~~~~~~
+../src/testdestructor.cpp:32:12: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+    return {"cloudy", 10};
+           ^~~~~~~~~~~~~~
+../src/testdestructor.cpp:32:12: error: non-aggregate type 'Weather' cannot be initialized with an initializer list
+    return {"cloudy", 10};
+           ^~~~~~~~~~~~~~
+../src/testdestructor.cpp:37:15: error: implicit instantiation of undefined template 'std::__1::vector<int, std::__1::allocator<int> >'
+  vector<int> days(2, 1);
+              ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iosfwd:200:28: note: template is declared here
+class _LIBCPP_TEMPLATE_VIS vector;
+                           ^
+../src/testdestructor.cpp:38:16: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (int day : days) {
+               ^
+3 warnings and 3 errors generated.
+make: *** [src/testdestructor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+02:48:19 Build Failed. 4 errors, 3 warnings. (took 656ms)
+

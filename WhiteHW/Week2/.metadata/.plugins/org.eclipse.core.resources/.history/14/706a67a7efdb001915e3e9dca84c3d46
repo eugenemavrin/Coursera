@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+#include <map>
+using namespace std;
+
+int main() {
+	map<string, string> buses;
+	int Q;
+	cin >> Q;
+	while (Q > 0) {
+		string query;
+		cin >> query;
+		if (query == "NEW_BUS") {
+
+		}
+		Q--;
+	}
+	return 0;
+}

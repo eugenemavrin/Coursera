@@ -1,0 +1,13 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	vector<int> array(n);
+	for (int& i : array) {
+		cin >> i;
+	}
+	return 0;
+}

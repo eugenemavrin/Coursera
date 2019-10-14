@@ -1,0 +1,16 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class Incognizable {
+public:
+	Incognizable() {};
+	Incognizable(vector<int> v) {
+		_v = v;
+	}
+private:
+	vector<int> _v;
+};
+int main() {
+	  return 0;
+	}

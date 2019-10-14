@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+struct Student {
+	string first_name;
+	string last_name;
+	unsigned int day;
+	unsigned int month;
+	unsigned int year;
+};
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

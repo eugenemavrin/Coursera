@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n, a, x, b, y;
+	if (n > b) {
+		cout << n * (1 - (double)y / 100);
+	}
+	else if (n > a) {
+		cout << n * (1 - (double)x / 100);
+	}
+	return 0;
+}

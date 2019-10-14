@@ -1,0 +1,15 @@
+22:59:44 **** Incremental Build of configuration Debug for project SalePrice ****
+make all 
+Building file: ../src/SalePrice.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SalePrice.d" -MT"src/SalePrice.o" -o "src/SalePrice.o" "../src/SalePrice.cpp"
+Finished building: ../src/SalePrice.cpp
+ 
+Building target: SalePrice
+Invoking: MacOS X C++ Linker
+g++  -o "SalePrice"  ./src/SalePrice.o   
+Finished building target: SalePrice
+ 
+
+22:59:44 Build Finished. 0 errors, 0 warnings. (took 434ms)
+

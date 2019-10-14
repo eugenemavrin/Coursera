@@ -1,0 +1,19 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+int main() {
+	ifstream text("input.txt");
+	int s, row, col;
+	//ofstream otext("output.txt");
+	if(text.is_open()) {
+		text >> col >> row;
+		while (text >> s) {
+			cout << setw(10);
+			cout << s << endl;
+		}
+	}
+	return 0;
+}

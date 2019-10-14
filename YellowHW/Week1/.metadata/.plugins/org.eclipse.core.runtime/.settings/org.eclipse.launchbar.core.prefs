@@ -1,0 +1,14 @@
+LaunchTargetManager/configs/matrix_sum=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:test_debug,org.eclipse.launchbar.core.descriptorType.default\:matrix_sum,org.eclipse.launchbar.core.descriptorType.default\:Test,org.eclipse.launchbar.core.descriptorType.default\:temperature,org.eclipse.launchbar.core.descriptorType.default\:blocks,org.eclipse.launchbar.core.descriptorType.default\:find_max_repetition_count,org.eclipse.launchbar.core.descriptorType.default\:sqr_all,org.eclipse.launchbar.core.descriptorType.default\:element_reference
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:blocks/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:blocks/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:find_max_repetition_count/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:matrix_sum/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:matrix_sum/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:sqr_all/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:temperature/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:test_debug/activeLaunchMode=debug

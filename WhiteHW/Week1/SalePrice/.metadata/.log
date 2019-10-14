@@ -1,0 +1,22 @@
+!SESSION 2019-09-17 22:54:15.999 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -keyring /Users/mavrin/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.cpp.product -keyring /Users/mavrin/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-09-17 22:54:39.041
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-09-17 22:54:39.092
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-17 22:54:43.752
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-09-17 22:54:43.752
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-09-17 22:55:21.901
+!MESSAGE Indexed 'SalePrice' (1 sources, 212 headers) in 9.93 sec: 23,397 declarations; 55,874 references; 0 unresolved inclusions; 18 syntax errors; 64 unresolved names (0.081%)

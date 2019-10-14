@@ -1,0 +1,80 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class FunctionPart {
+public:
+	FunctionPart(const char& c, const double x) {
+		_operand = c;
+		_x = x;
+	}
+	double Apply(double s) const {
+		if (_operand == '+') {
+			return s + _x;
+		} else return s - _x;
+	}
+	void Invert() {
+		if (_operand == '+') {
+			_operand = '-';
+		}
+		else _operand = '+';
+	  }
+private:
+	char _operand;
+	double _x;
+};
+
+class Function {
+public:
+	Function() {};
+	void AddPart (const char& c, const double x) {
+		_operations.push_back(FunctionPart(c, x));
+	}
+	double Apply(double y){
+		double res = y;
+		for (auto& o : _operations) {
+			y =  _operations.Apply(y);
+		}
+		return res;
+	}
+	void Invert() {
+		for (auto & o : _operations) {
+			if (o.Operand() == '+') {
+				o = FunctionPart('-', o.Value());
+			}
+			else o = FunctionPart('+', o.Value());
+		}
+		reverse(_operations.begin(), _operations.end());
+	}
+
+private:
+	vector<FunctionPart> _operations;
+};
+
+
+/*
+ * Compile error: b"/tmp/submissionmhi5tlsx/invert.cpp: In function
+ * 'double ComputeQualityByWeight(const Params&, const Image&, double, WeightFunction)':\
+ * n/tmp/submissionmhi5tlsx/invert.cpp:104:35: error: no matching function for call to
+ * 'Function::Apply(double&) const'\n   return function_ref.Apply(weight);\n                                   ^\ncompilation terminated due to -Wfatal-errors.\n"
+
+ *Compile error: b"/tmp/submissionytqp1723/invert.cpp:
+ *Compile  In function 'double ComputeImageWeight
+ *Compile  (const Params&, const Image&, WeightFunction)'
+ *Compile  :\n/tmp/submissionytqp1723/invert.cpp:101:38: error:
+ *Compile   no matching function for call to '
+ *Compile   Function::Apply(const double&)'\n
+ *Compile   return function.Apply(image.quality);\n                                      ^\ncompilation terminated due to -Wfatal-errors.\n"
+
+ *
+ *
+ *Compile error: b"/tmp/submission2ktocmqx/invert.cpp:
+ *Compile In function 'double ComputeQualityByWeight(const Params&,
+ *Compile const Image&, double, WeightFunction)':
+ *Compile
+ *Compile \n/tmp/submission2ktocmqx/invert.cpp:119:35: error:
+ *Compile no matching function for call to 'Function::Apply(double&)
+ *Compile  const'\n   return function_ref.Apply(weight);\n                                   ^\ncompilation terminated due to -Wfatal-errors.\n"
+
+ *
+ */

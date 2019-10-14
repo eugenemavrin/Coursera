@@ -1,0 +1,20 @@
+17:45:37 **** Incremental Build of configuration Debug for project reverse ****
+make all 
+Building file: ../src/reverse.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/reverse.d" -MT"src/reverse.o" -o "src/reverse.o" "../src/reverse.cpp"
+../src/reverse.cpp:15:14: error: non-aggregate type 'vector<int>' cannot be initialized with an initializer list
+        vector<int> f= {1, 5, 3, 4, 2}, x;
+                    ^  ~~~~~~~~~~~~~~~
+../src/reverse.cpp:17:10: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    for (auto z : x) {
+         ^
+../src/reverse.cpp:17:17: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    for (auto z : x) {
+                ^
+2 warnings and 1 error generated.
+make: *** [src/reverse.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+17:45:38 Build Failed. 2 errors, 2 warnings. (took 371ms)
+

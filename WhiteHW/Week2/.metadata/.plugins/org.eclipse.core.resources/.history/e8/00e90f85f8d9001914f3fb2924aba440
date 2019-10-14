@@ -1,0 +1,24 @@
+//============================================================================
+// Name        : move_strings.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+void MoveStrings(vector<string>& source, vector<string>& destination) {
+	destination.push_back(source);
+}
+
+int main() {
+	vector<string> source = {"a", "b", "c"};
+	vector<string> destination = {"z"};
+	MoveStrings(source, destination);
+
+	return 0;
+}

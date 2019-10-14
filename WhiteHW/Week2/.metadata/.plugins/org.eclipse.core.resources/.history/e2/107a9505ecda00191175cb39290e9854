@@ -1,0 +1,38 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	vector<bool> line(0, 0);
+	while (n > 0) {
+		string s;
+		cin >> s;
+		switch (s) {
+			case "WORRY":
+				//WORRY
+				break;
+			case "QUIET":
+				//QUIET:
+				break;
+			case "COME":
+				int count;
+				cin >> count;
+				line.resize(line.size() + count);
+				cout << "line size = " << line.size() << endl;
+				//COME
+				break;
+			case "WORRY_COUNT":
+				//WORRY_COUNT
+				break;
+			default:
+				break;
+
+		}
+
+	}
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

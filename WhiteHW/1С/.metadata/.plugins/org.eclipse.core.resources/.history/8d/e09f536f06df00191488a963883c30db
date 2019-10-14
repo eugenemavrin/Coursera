@@ -1,0 +1,20 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+	cout << "array length = ";
+	int l;
+	cin >> l;
+	vector <int> array(l);
+	for (int& d : array) {
+		cin >> d;
+	}
+	for (int d : array) {
+		if (d < 0) array.erase(array.begin() + &d);
+	}
+	for (int& d : array) {
+		cout << d;
+	}
+	return 0;
+}

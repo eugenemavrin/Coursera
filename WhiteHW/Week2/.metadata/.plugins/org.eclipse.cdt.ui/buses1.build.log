@@ -1,0 +1,6 @@
+03:19:14 **** Incremental Build of configuration Debug for project buses1 ****
+make all 
+make: Nothing to be done for `all'.
+
+03:19:14 Build Finished. 0 errors, 0 warnings. (took 168ms)
+

@@ -1,0 +1,22 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <map>
+using namespace std;
+
+int main() {
+	int bus_counter = 1;
+	map<vector<string>, int> buses;
+	int Q;
+	cin >> Q;
+	while (Q > 0) {
+		int count;
+		cin >> count;
+		vector<string> new_bus_stops(count);
+		for (string& s: new_bus_stops(count)) {
+
+		}
+		Q--;
+	}
+	return 0;
+}

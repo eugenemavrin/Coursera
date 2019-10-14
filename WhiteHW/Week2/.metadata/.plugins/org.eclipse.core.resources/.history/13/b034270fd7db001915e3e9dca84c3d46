@@ -1,0 +1,36 @@
+#include <iostream>
+#include <map>
+#include <string>
+using namespace std;
+
+int main() {
+	map<string, string> countries;
+	int Q;
+	cin >> Q;
+	while (Q > 0) {
+		string query;
+		cin >> query;
+		if (query == "CHANGE_CAPITAL") {
+			string country, new_capital;
+			cin >> country >> new_capital;
+			if(countries.count(country) == 1) {
+				if (countries[country] == new_capital) {
+					cout << "Country " << country <<" hasn't changed its capital";
+				}
+				else {
+					cout << "Country "<< country << " has changed its capital from "
+							<< countries[country]  <<" to " << new_capital;
+
+				}
+			}
+			else {
+				cout << "Introduce new country " << country
+						<<" with capital "<< new_capital;
+			}
+			countries[country] = new_capital;
+		}
+		Q--;
+	}
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

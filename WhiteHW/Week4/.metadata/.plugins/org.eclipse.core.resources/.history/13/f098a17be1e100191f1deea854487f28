@@ -1,0 +1,19 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+int main() {
+	ifstream text("input.txt");
+	string s;
+	//ofstream otext("output.txt");
+	if(text.is_open()) {
+		while (getline(text, s)) {
+			//otext << s << endl;
+			cout << fixed << setprecision32);
+			cout << stoi(s) << endl;
+		}
+	}
+	return 0;
+}

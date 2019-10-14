@@ -1,0 +1,26 @@
+12:18:33 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Building file: ../src/test2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test2.d" -MT"src/test2.o" -o "src/test2.o" "../src/test2.cpp"
+../src/test2.cpp:8:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (char c : s) {
+                    ^
+../src/test2.cpp:18:19: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (string word : words) {
+                         ^
+../src/test2.cpp:26:17: error: non-aggregate type 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >') cannot be initialized with an initializer list
+        vector<string> words = {"meem", "Tuesday", "Wednesday", "Thursday"};
+                       ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/test2.cpp:30:7: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for (auto w : www) {
+             ^
+../src/test2.cpp:30:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (auto w : www) {
+                    ^
+4 warnings and 1 error generated.
+make: *** [src/test2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+12:18:34 Build Failed. 2 errors, 4 warnings. (took 747ms)
+

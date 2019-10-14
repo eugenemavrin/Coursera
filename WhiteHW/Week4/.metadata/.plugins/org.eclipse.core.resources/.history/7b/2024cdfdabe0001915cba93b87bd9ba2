@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+struct
+
+struct LectureTitle {
+  string specialization;
+  string course;
+  string week;
+
+  LectureTitle () {
+
+  }
+};
+
+int main() {
+	return 0;
+}

@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+struct Specialization {
+	string specialization;
+	explicity Specialization (string s) {
+		specialization = s;
+	}
+};
+struct Course {
+	string course;
+	Course (string s) {
+		course = s;
+	}
+};
+struct Week {
+	string week;
+	Week (string s) {
+		week = s;
+	}
+
+};
+
+struct LectureTitle {
+  string specialization;
+  string course;
+  string week;
+
+  LectureTitle (Specialization s, Course c, Week w) {
+	  specialization = s;
+	  course = c;
+	  week = w;
+  }
+};
+
+int main() {
+	return 0;
+}

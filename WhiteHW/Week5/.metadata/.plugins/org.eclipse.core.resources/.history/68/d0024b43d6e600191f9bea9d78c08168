@@ -1,0 +1,149 @@
+#include <string>
+#include <sstream>
+#include <iostream>
+#include <map>
+#include <vector>
+#include <set>
+#include <iomanip>
+using namespace std;
+
+// Реализуйте функции и методы классов и при необходимости добавьте свои
+class Date {
+public:
+	Date() {
+		_year = 0;
+		_month = 0;
+		_day = 0;
+	}
+	Date(int y, int m, int d) {
+		_year = y;
+		_month = m;
+		_day = d;
+	}
+	int GetYear() const {
+		return _year;
+	}
+	void SetYear(const int& year) {
+		_year = year;
+	}
+	int GetMonth() const {
+		return _month;
+	}
+	void SetMonth(const int& month) {
+		_month = month;
+	}
+	int GetDay() const {
+		return _day;
+	}
+	void SetDay(const int& day) {
+		_day = day;
+	}
+private:
+	int _year;
+	int _month;
+	int _day;
+};
+
+bool operator<(const Date& lhs, const Date& rhs) {
+	if (lhs.GetYear() != rhs.GetYear()) {
+		return lhs.GetYear() < rhs.GetYear();
+	}
+	else if (lhs.GetMonth() != rhs.GetMonth()) {
+		return lhs.GetMonth() < rhs.GetMonth();
+	}
+	else if (lhs.GetDay() != rhs.GetDay()) {
+		return lhs.GetDay() < rhs.GetDay();
+	}
+	return false;
+}
+
+Date ReadDate(istream& s) {
+	int y, m, d;
+	s >> y;
+	s.ignore();
+	s >> m;
+	if(m > 12) {
+		cout << "ERROR";
+		throw invalid_argument("MONTH");
+	}
+	s.ignore();
+	s >> d;
+	if(m > 31) {
+		throw invalid_argument("DAY");
+	}
+	Date date(y, m, d);
+	return date;
+}
+string ReadEvent(istream& s) {
+	string event;
+	s >> event;
+	return event;
+}
+
+class Database {
+public:
+	explicit Database() {};
+	void AddEvent(const Date& date, const string& event) {
+			_db[date].insert(event);
+			//cout << "added" << endl;
+	}
+	bool DeleteEvent(const Date& date, const string& event);
+	int  DeleteDate(const Date& date);
+
+	// /* ??? */ Find(const Date& date) const;
+
+	void Print() const {
+		for (const auto &l : _db) {
+			for (const auto &e : l.second) {
+				cout << setfill('0') << setw(4) << l.first.GetYear() << "-" <<
+						setfill('0') << setw(2) << l.first.GetMonth() << "-" <<
+						setfill('0') << setw(2) << l.first.GetDay() <<
+						" " << e << endl;;
+			}
+		}
+	}
+private:
+	map<Date, set<string> > _db;
+};
+
+int main() {
+	Database db;
+	string command;
+
+	while (getline(cin, command)) {
+		//положим, что строки подаются согласно формату
+		stringstream stream(command);
+		string queue;
+		stream >> queue;
+		//cout << queue << endl;
+		if(queue == "Add") {
+			Date date;
+			try {
+				date = ReadDate(stream);
+			} catch (invalid_argument &ex) {
+				cout << "value is invalid: " << ex.what();
+			}
+			string event = ReadEvent(stream);
+			db.AddEvent(date, event);
+			//cout << "in add";
+
+		}
+		else if (queue == "Del") {
+			//cout << "in del";
+
+		}
+		else if (queue == "Find") {
+			//cout << "in find";
+
+		}
+		else if (queue == "Print") {
+			//cout << "in print";
+			db.Print();
+
+		}
+		//cout << endl;
+		  // Считайте команды с потока ввода и обработайте каждую
+		}
+
+  return 0;
+}

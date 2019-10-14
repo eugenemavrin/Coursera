@@ -1,0 +1,249 @@
+23:57:32 **** Build of configuration Debug for project nod ****
+make all 
+Building file: ../src/nod.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/nod.d" -MT"src/nod.o" -o "src/nod.o" "../src/nod.cpp"
+Finished building: ../src/nod.cpp
+ 
+Building target: nod
+Invoking: MacOS X C++ Linker
+g++  -o "nod"  ./src/nod.o   
+Finished building target: nod
+ 
+23:57:41 **** Incremental Build of configuration Debug for project nod ****
+make all 
+make: Nothing to be done for `all'.
+23:59:39 **** Incremental Build of configuration Debug for project nod ****
+make all 
+Building file: ../src/nod.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/nod.d" -MT"src/nod.o" -o "src/nod.o" "../src/nod.cpp"
+../src/nod.cpp:5:5: error: expected ';' after expression
+        cin a, b;
+           ^
+           ;
+../src/nod.cpp:5:6: error: use of undeclared identifier 'a'
+        cin a, b;
+            ^
+../src/nod.cpp:5:9: error: use of undeclared identifier 'b'
+        cin a, b;
+               ^
+../src/nod.cpp:6:9: error: use of undeclared identifier 'a'
+        while (a != b) {
+               ^
+../src/nod.cpp:6:14: error: use of undeclared identifier 'b'
+        while (a != b) {
+                    ^
+../src/nod.cpp:7:7: error: use of undeclared identifier 'a'
+                if (a > b)
+                    ^
+../src/nod.cpp:7:11: error: use of undeclared identifier 'b'
+                if (a > b)
+                        ^
+../src/nod.cpp:8:4: error: use of undeclared identifier 'a'
+                        a -= b;
+                        ^
+../src/nod.cpp:8:9: error: use of undeclared identifier 'b'
+                        a -= b;
+                             ^
+../src/nod.cpp:9:8: error: use of undeclared identifier 'b'
+                else b -= a;
+                     ^
+../src/nod.cpp:9:13: error: use of undeclared identifier 'a'
+                else b -= a;
+                          ^
+../src/nod.cpp:11:10: error: use of undeclared identifier 'a'
+        cout << a;
+                ^
+../src/nod.cpp:5:2: warning: expression result unused [-Wunused-value]
+        cin a, b;
+        ^~~
+1 warning and 12 errors generated.
+make: *** [src/nod.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:59:47 **** Incremental Build of configuration Debug for project nod ****
+make all 
+Building file: ../src/nod.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/nod.d" -MT"src/nod.o" -o "src/nod.o" "../src/nod.cpp"
+../src/nod.cpp:5:5: error: expected ';' after expression
+        cin a, b;
+           ^
+           ;
+../src/nod.cpp:5:6: error: use of undeclared identifier 'a'
+        cin a, b;
+            ^
+../src/nod.cpp:5:9: error: use of undeclared identifier 'b'
+        cin a, b;
+               ^
+../src/nod.cpp:6:9: error: use of undeclared identifier 'a'
+        while (a != b) {
+               ^
+../src/nod.cpp:6:14: error: use of undeclared identifier 'b'
+        while (a != b) {
+                    ^
+../src/nod.cpp:7:7: error: use of undeclared identifier 'a'
+                if (a > b)
+                    ^
+../src/nod.cpp:7:11: error: use of undeclared identifier 'b'
+                if (a > b)
+                        ^
+../src/nod.cpp:8:4: error: use of undeclared identifier 'a'
+                        a -= b;
+                        ^
+../src/nod.cpp:8:9: error: use of undeclared identifier 'b'
+                        a -= b;
+                             ^
+../src/nod.cpp:9:8: error: use of undeclared identifier 'b'
+                else b -= a;
+                     ^
+../src/nod.cpp:9:13: error: use of undeclared identifier 'a'
+                else b -= a;
+                          ^
+../src/nod.cpp:11:10: error: use of undeclared identifier 'a'
+        cout << a;
+                ^
+../src/nod.cpp:5:2: warning: expression result unused [-Wunused-value]
+        cin a, b;
+        ^~~
+1 warning and 12 errors generated.
+make: *** [src/nod.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:59:48 **** Incremental Build of configuration Debug for project nod ****
+make all 
+Building file: ../src/nod.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/nod.d" -MT"src/nod.o" -o "src/nod.o" "../src/nod.cpp"
+../src/nod.cpp:5:5: error: expected ';' after expression
+        cin a, b;
+           ^
+           ;
+../src/nod.cpp:5:6: error: use of undeclared identifier 'a'
+        cin a, b;
+            ^
+../src/nod.cpp:5:9: error: use of undeclared identifier 'b'
+        cin a, b;
+               ^
+../src/nod.cpp:6:9: error: use of undeclared identifier 'a'
+        while (a != b) {
+               ^
+../src/nod.cpp:6:14: error: use of undeclared identifier 'b'
+        while (a != b) {
+                    ^
+../src/nod.cpp:7:7: error: use of undeclared identifier 'a'
+                if (a > b)
+                    ^
+../src/nod.cpp:7:11: error: use of undeclared identifier 'b'
+                if (a > b)
+                        ^
+../src/nod.cpp:8:4: error: use of undeclared identifier 'a'
+                        a -= b;
+                        ^
+../src/nod.cpp:8:9: error: use of undeclared identifier 'b'
+                        a -= b;
+                             ^
+../src/nod.cpp:9:8: error: use of undeclared identifier 'b'
+                else b -= a;
+                     ^
+../src/nod.cpp:9:13: error: use of undeclared identifier 'a'
+                else b -= a;
+                          ^
+../src/nod.cpp:11:10: error: use of undeclared identifier 'a'
+        cout << a;
+                ^
+../src/nod.cpp:5:2: warning: expression result unused [-Wunused-value]
+        cin a, b;
+        ^~~
+1 warning and 12 errors generated.
+make: *** [src/nod.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:00:08 **** Incremental Build of configuration Debug for project nod ****
+make all 
+Building file: ../src/nod.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/nod.d" -MT"src/nod.o" -o "src/nod.o" "../src/nod.cpp"
+../src/nod.cpp:6:5: error: expected ';' after expression
+        cin a, b;
+           ^
+           ;
+../src/nod.cpp:6:6: warning: expression result unused [-Wunused-value]
+        cin a, b;
+            ^
+../src/nod.cpp:6:2: warning: expression result unused [-Wunused-value]
+        cin a, b;
+        ^~~
+../src/nod.cpp:6:9: warning: expression result unused [-Wunused-value]
+        cin a, b;
+               ^
+3 warnings and 1 error generated.
+make: *** [src/nod.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:00:16 **** Incremental Build of configuration Debug for project nod ****
+make all 
+Building file: ../src/nod.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/nod.d" -MT"src/nod.o" -o "src/nod.o" "../src/nod.cpp"
+Finished building: ../src/nod.cpp
+ 
+Building target: nod
+Invoking: MacOS X C++ Linker
+g++  -o "nod"  ./src/nod.o   
+Finished building target: nod
+ 
+00:00:21 **** Incremental Build of configuration Debug for project nod ****
+make all 
+make: Nothing to be done for `all'.
+00:00:32 **** Incremental Build of configuration Debug for project nod ****
+make all 
+make: Nothing to be done for `all'.
+00:00:38 **** Incremental Build of configuration Debug for project nod ****
+make all 
+make: Nothing to be done for `all'.
+00:00:43 **** Incremental Build of configuration Debug for project nod ****
+make all 
+make: Nothing to be done for `all'.
+00:03:54 **** Incremental Build of configuration Debug for project nod ****
+make all 
+Building file: ../src/nod.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/nod.d" -MT"src/nod.o" -o "src/nod.o" "../src/nod.cpp"
+Finished building: ../src/nod.cpp
+ 
+Building target: nod
+Invoking: MacOS X C++ Linker
+g++  -o "nod"  ./src/nod.o   
+Finished building target: nod
+ 
+00:04:02 **** Incremental Build of configuration Debug for project nod ****
+make all 
+make: Nothing to be done for `all'.
+00:04:10 **** Incremental Build of configuration Debug for project nod ****
+make all 
+make: Nothing to be done for `all'.
+00:05:07 **** Incremental Build of configuration Debug for project nod ****
+make all 
+Building file: ../src/nod.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/nod.d" -MT"src/nod.o" -o "src/nod.o" "../src/nod.cpp"
+Finished building: ../src/nod.cpp
+ 
+Building target: nod
+Invoking: MacOS X C++ Linker
+g++  -o "nod"  ./src/nod.o   
+Finished building target: nod
+ 
+00:05:13 **** Incremental Build of configuration Debug for project nod ****
+make all 
+make: Nothing to be done for `all'.
+00:05:16 **** Incremental Build of configuration Debug for project nod ****
+make all 
+make: Nothing to be done for `all'.
+00:05:20 **** Incremental Build of configuration Debug for project nod ****
+make all 
+make: Nothing to be done for `all'.
+00:05:25 **** Incremental Build of configuration Debug for project nod ****
+make all 
+make: Nothing to be done for `all'.
+00:05:26 **** Incremental Build of configuration Debug for project nod ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,17 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main() {
+	ifstream text("input.txt");
+	int s;
+	//ofstream otext("output.txt");
+	if(text.is_open()) {
+		while (text >> s) {
+			//otext << s << endl;
+			cout << s << endl;
+		}
+	}
+	return 0;
+}

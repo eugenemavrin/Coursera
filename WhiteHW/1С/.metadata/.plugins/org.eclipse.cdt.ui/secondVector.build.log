@@ -1,0 +1,22 @@
+23:05:23 **** Incremental Build of configuration Debug for project secondVector ****
+make all 
+Building file: ../src/secondVector.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/secondVector.d" -MT"src/secondVector.o" -o "src/secondVector.o" "../src/secondVector.cpp"
+../src/secondVector.cpp:10:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+../src/secondVector.cpp:19:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+2 warnings generated.
+Finished building: ../src/secondVector.cpp
+ 
+Building target: secondVector
+Invoking: MacOS X C++ Linker
+g++  -o "secondVector"  ./src/secondVector.o   
+Finished building target: secondVector
+ 
+
+23:05:24 Build Finished. 0 errors, 2 warnings. (took 693ms)
+

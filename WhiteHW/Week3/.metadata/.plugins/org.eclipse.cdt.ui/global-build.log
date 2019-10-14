@@ -1,0 +1,3124 @@
+03:49:01 **** Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+../src/sort.cpp:8:12: error: declaration of reference variable 'i' requires an initializer
+        for (int& i; array) {
+                  ^
+../src/sort.cpp:8:15: warning: address of array 'array' will always evaluate to 'true' [-Wpointer-bool-conversion]
+        for (int& i; array) {
+        ~~~          ^~~~~
+../src/sort.cpp:8:20: error: expected ';' in 'for' statement specifier
+        for (int& i; array) {
+                          ^
+1 warning and 2 errors generated.
+make: *** [src/sort.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:49:35 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+../src/sort.cpp:8:12: error: declaration of reference variable 'i' requires an initializer
+        for (int& i; array) {
+                  ^
+../src/sort.cpp:8:15: warning: address of array 'array' will always evaluate to 'true' [-Wpointer-bool-conversion]
+        for (int& i; array) {
+        ~~~          ^~~~~
+../src/sort.cpp:8:20: error: expected ';' in 'for' statement specifier
+        for (int& i; array) {
+                          ^
+1 warning and 2 errors generated.
+make: *** [src/sort.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:50:25 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+Finished building: ../src/sort.cpp
+ 
+Building target: sort
+Invoking: MacOS X C++ Linker
+g++  -o "sort"  ./src/sort.o   
+Finished building target: sort
+ 
+03:50:55 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+03:51:03 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+Finished building: ../src/sort.cpp
+ 
+Building target: sort
+Invoking: MacOS X C++ Linker
+g++  -o "sort"  ./src/sort.o   
+Finished building target: sort
+ 
+03:51:48 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+03:52:03 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+../src/sort.cpp:12:13: error: use of undeclared identifier 'n'
+        sort(begin(n), end(n);
+                   ^
+../src/sort.cpp:12:21: error: use of undeclared identifier 'n'
+        sort(begin(n), end(n);
+                           ^
+2 errors generated.
+make: *** [src/sort.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:56:58 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+../src/sort.cpp:11:7: error: assigning to 'int' from incompatible type '<overloaded function type>'
+                i = abs i;
+                    ^~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/stdlib.h:113:44: note: candidate function
+inline _LIBCPP_INLINE_VISIBILITY long long abs(long long __x) _NOEXCEPT {return llabs(__x);}
+                                           ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/stdlib.h:111:44: note: candidate function
+inline _LIBCPP_INLINE_VISIBILITY long      abs(     long __x) _NOEXCEPT {return  labs(__x);}
+                                           ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/stdlib.h:132:6: note: candidate function
+int      abs(int) __pure2;
+         ^
+../src/sort.cpp:13:7: error: no matching function for call to 'begin'
+        sort(begin(array), end(array));
+             ^~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/initializer_list:100:1: note: candidate template ignored: could not match 'initializer_list<type-parameter-0-0>' against 'int *'
+begin(initializer_list<_Ep> __il) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1645:1: note: candidate template ignored: could not match '_Tp [_Np]' against 'int [N]'
+begin(_Tp (&__array)[_Np])
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1663:1: note: candidate template ignored: substitution failure : variably modified type 'int [N]' cannot be used as a template argument
+begin(_Cp& __c) -> decltype(__c.begin())
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1671:1: note: candidate template ignored: substitution failure : variably modified type 'int [N]' cannot be used as a template argument
+begin(const _Cp& __c) -> decltype(__c.begin())
+^
+../src/sort.cpp:13:21: error: no matching function for call to 'end'
+        sort(begin(array), end(array));
+                           ^~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/initializer_list:109:1: note: candidate template ignored: could not match 'initializer_list<type-parameter-0-0>' against 'int *'
+end(initializer_list<_Ep> __il) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1653:1: note: candidate template ignored: could not match '_Tp [_Np]' against 'int [N]'
+end(_Tp (&__array)[_Np])
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1679:1: note: candidate template ignored: substitution failure : variably modified type 'int [N]' cannot be used as a template argument
+end(_Cp& __c) -> decltype(__c.end())
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1687:1: note: candidate template ignored: substitution failure : variably modified type 'int [N]' cannot be used as a template argument
+end(const _Cp& __c) -> decltype(__c.end())
+^
+3 errors generated.
+make: *** [src/sort.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:57:20 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+../src/sort.cpp:12:7: error: no matching function for call to 'begin'
+        sort(begin(array), end(array)};
+             ^~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/initializer_list:100:1: note: candidate template ignored: could not match 'initializer_list<type-parameter-0-0>' against 'int *'
+begin(initializer_list<_Ep> __il) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1645:1: note: candidate template ignored: could not match '_Tp [_Np]' against 'int [N]'
+begin(_Tp (&__array)[_Np])
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1663:1: note: candidate template ignored: substitution failure : variably modified type 'int [N]' cannot be used as a template argument
+begin(_Cp& __c) -> decltype(__c.begin())
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1671:1: note: candidate template ignored: substitution failure : variably modified type 'int [N]' cannot be used as a template argument
+begin(const _Cp& __c) -> decltype(__c.begin())
+^
+../src/sort.cpp:12:21: error: no matching function for call to 'end'
+        sort(begin(array), end(array)};
+                           ^~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/initializer_list:109:1: note: candidate template ignored: could not match 'initializer_list<type-parameter-0-0>' against 'int *'
+end(initializer_list<_Ep> __il) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1653:1: note: candidate template ignored: could not match '_Tp [_Np]' against 'int [N]'
+end(_Tp (&__array)[_Np])
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1679:1: note: candidate template ignored: substitution failure : variably modified type 'int [N]' cannot be used as a template argument
+end(_Cp& __c) -> decltype(__c.end())
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1687:1: note: candidate template ignored: substitution failure : variably modified type 'int [N]' cannot be used as a template argument
+end(const _Cp& __c) -> decltype(__c.end())
+^
+../src/sort.cpp:15:2: error: expected '}'
+}
+ ^
+../src/sort.cpp:5:12: note: to match this '{'
+int main() {
+           ^
+3 errors generated.
+make: *** [src/sort.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:57:32 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+../src/sort.cpp:12:7: error: no matching function for call to 'begin'
+        sort(begin(array), end(array));
+             ^~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/initializer_list:100:1: note: candidate template ignored: could not match 'initializer_list<type-parameter-0-0>' against 'int *'
+begin(initializer_list<_Ep> __il) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1645:1: note: candidate template ignored: could not match '_Tp [_Np]' against 'int [N]'
+begin(_Tp (&__array)[_Np])
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1663:1: note: candidate template ignored: substitution failure : variably modified type 'int [N]' cannot be used as a template argument
+begin(_Cp& __c) -> decltype(__c.begin())
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1671:1: note: candidate template ignored: substitution failure : variably modified type 'int [N]' cannot be used as a template argument
+begin(const _Cp& __c) -> decltype(__c.begin())
+^
+../src/sort.cpp:12:21: error: no matching function for call to 'end'
+        sort(begin(array), end(array));
+                           ^~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/initializer_list:109:1: note: candidate template ignored: could not match 'initializer_list<type-parameter-0-0>' against 'int *'
+end(initializer_list<_Ep> __il) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1653:1: note: candidate template ignored: could not match '_Tp [_Np]' against 'int [N]'
+end(_Tp (&__array)[_Np])
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1679:1: note: candidate template ignored: substitution failure : variably modified type 'int [N]' cannot be used as a template argument
+end(_Cp& __c) -> decltype(__c.end())
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1687:1: note: candidate template ignored: substitution failure : variably modified type 'int [N]' cannot be used as a template argument
+end(const _Cp& __c) -> decltype(__c.end())
+^
+2 errors generated.
+make: *** [src/sort.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:58:02 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+../src/sort.cpp:12:12: error: member reference base type 'int [N]' is not a structure or union
+        sort(array.begin(), array.end());
+             ~~~~~^~~~~~
+../src/sort.cpp:12:27: error: member reference base type 'int [N]' is not a structure or union
+        sort(array.begin(), array.end());
+                            ~~~~~^~~~
+2 errors generated.
+make: *** [src/sort.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:58:38 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+../src/sort.cpp:12:13: error: member reference base type 'int [N]' is not a structure or union
+        sort (array.begin(), array.end());
+              ~~~~~^~~~~~
+../src/sort.cpp:12:28: error: member reference base type 'int [N]' is not a structure or union
+        sort (array.begin(), array.end());
+                             ~~~~~^~~~
+2 errors generated.
+make: *** [src/sort.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:58:55 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+../src/sort.cpp:8:14: error: implicit instantiation of undefined template 'std::__1::vector<int, std::__1::allocator<int> >'
+        vector<int> array(N);
+                    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iosfwd:200:28: note: template is declared here
+class _LIBCPP_TEMPLATE_VIS vector;
+                           ^
+1 error generated.
+make: *** [src/sort.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:52:16 **** Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+../src/sort.cpp:9:7: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for (auto& i : array) {
+             ^
+../src/sort.cpp:9:15: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (auto& i : array) {
+                     ^
+2 warnings generated.
+Finished building: ../src/sort.cpp
+ 
+Building target: sort
+Invoking: MacOS X C++ Linker
+g++  -o "sort"  ./src/sort.o   
+Finished building target: sort
+ 
+04:52:21 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+../src/sort.cpp:9:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& i : array) {
+                    ^
+1 warning generated.
+Finished building: ../src/sort.cpp
+ 
+Building target: sort
+Invoking: MacOS X C++ Linker
+g++  -o "sort"  ./src/sort.o   
+Finished building target: sort
+ 
+04:52:54 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+Finished building: ../src/sort.cpp
+ 
+Building target: sort
+Invoking: MacOS X C++ Linker
+g++  -o "sort"  ./src/sort.o   
+Finished building target: sort
+ 
+04:53:02 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+04:55:05 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+Finished building: ../src/sort.cpp
+ 
+Building target: sort
+Invoking: MacOS X C++ Linker
+g++  -o "sort"  ./src/sort.o   
+Finished building target: sort
+ 
+04:55:42 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+Finished building: ../src/sort.cpp
+ 
+Building target: sort
+Invoking: MacOS X C++ Linker
+g++  -o "sort"  ./src/sort.o   
+Finished building target: sort
+ 
+04:56:34 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+Finished building: ../src/sort.cpp
+ 
+Building target: sort
+Invoking: MacOS X C++ Linker
+g++  -o "sort"  ./src/sort.o   
+Finished building target: sort
+ 
+04:56:37 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+04:56:44 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+04:56:56 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+Finished building: ../src/sort.cpp
+ 
+Building target: sort
+Invoking: MacOS X C++ Linker
+g++  -o "sort"  ./src/sort.o   
+Finished building target: sort
+ 
+04:57:04 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+04:58:56 **** Incremental Build of configuration Debug for project sort ****
+make all 
+Building file: ../src/sort.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sort.d" -MT"src/sort.o" -o "src/sort.o" "../src/sort.cpp"
+Finished building: ../src/sort.cpp
+ 
+Building target: sort
+Invoking: MacOS X C++ Linker
+g++  -o "sort"  ./src/sort.o   
+Finished building target: sort
+ 
+04:58:59 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+05:04:55 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+05:04:55 **** Build of configuration Debug for project tolower ****
+make all 
+Building file: ../src/tolower.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tolower.d" -MT"src/tolower.o" -o "src/tolower.o" "../src/tolower.cpp"
+Finished building: ../src/tolower.cpp
+ 
+Building target: tolower
+Invoking: MacOS X C++ Linker
+g++  -o "tolower"  ./src/tolower.o   
+Finished building target: tolower
+ 
+05:07:16 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+05:07:16 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+Building file: ../src/tolower.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tolower.d" -MT"src/tolower.o" -o "src/tolower.o" "../src/tolower.cpp"
+../src/tolower.cpp:24:12: error: non-const lvalue reference to type 'int' cannot bind to a value of unrelated type 'std::__1::basic_string<char>'
+        for (int& i : array) {
+                  ^ ~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:617:54: note: selected 'begin' function with iterator type 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >::iterator' (aka '__wrap_iter<std::__1::basic_string<char> *>')
+    _LIBCPP_INLINE_VISIBILITY iterator               begin() _NOEXCEPT;
+                                                     ^
+1 error generated.
+make: *** [src/tolower.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+05:07:27 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+05:07:27 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+Building file: ../src/tolower.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tolower.d" -MT"src/tolower.o" -o "src/tolower.o" "../src/tolower.cpp"
+../src/tolower.cpp:24:12: error: non-const lvalue reference to type 'int' cannot bind to a value of unrelated type 'std::__1::basic_string<char>'
+        for (int& i : array) {
+                  ^ ~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:617:54: note: selected 'begin' function with iterator type 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >::iterator' (aka '__wrap_iter<std::__1::basic_string<char> *>')
+    _LIBCPP_INLINE_VISIBILITY iterator               begin() _NOEXCEPT;
+                                                     ^
+1 error generated.
+make: *** [src/tolower.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+05:07:39 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+05:07:39 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+Building file: ../src/tolower.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tolower.d" -MT"src/tolower.o" -o "src/tolower.o" "../src/tolower.cpp"
+Finished building: ../src/tolower.cpp
+ 
+Building target: tolower
+Invoking: MacOS X C++ Linker
+g++  -o "tolower"  ./src/tolower.o   
+Finished building target: tolower
+ 
+05:07:45 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+05:08:16 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+05:08:26 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+11:14:05 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:14:06 **** Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+../src/sorted_strings.cpp:9:17: error: cannot use dot operator on a type
+          SortedStrings.array.push_back(s);
+                       ^
+1 error generated.
+make: *** [src/sorted_strings.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:14:08 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+11:14:50 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:14:51 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+Finished building: ../src/sorted_strings.cpp
+ 
+Building target: sorted_strings
+Invoking: MacOS X C++ Linker
+g++  -o "sorted_strings"  ./src/sorted_strings.o   
+Finished building target: sorted_strings
+ 
+11:14:52 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+11:17:25 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:17:25 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+../src/sorted_strings.cpp:14:11: error: no viable conversion from returned value of type 'void' to function return type 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >')
+          return sort(begin(array), end(array));
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:551:5: note: candidate constructor not viable: cannot convert argument of incomplete type 'void' to 'const std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > &' for 1st argument
+    vector(const vector& __x);
+    ^
+../src/sorted_strings.cpp:23:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (const string& s : strings.GetSortedStrings()) {
+                       ^
+../src/sorted_strings.cpp:42:2: error: expected unqualified-id
+        return 0;
+        ^
+../src/sorted_strings.cpp:43:1: error: extraneous closing brace ('}')
+}
+^
+1 warning and 3 errors generated.
+make: *** [src/sorted_strings.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:17:27 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+11:22:09 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:22:09 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+../src/sorted_strings.cpp:14:11: error: no viable conversion from returned value of type 'void' to function return type 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >')
+          return sort(begin(array), end(array));
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:551:5: note: candidate constructor not viable: cannot convert argument of incomplete type 'void' to 'const std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > &' for 1st argument
+    vector(const vector& __x);
+    ^
+../src/sorted_strings.cpp:23:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (const string& s : strings.GetSortedStrings()) {
+                       ^
+1 warning and 1 error generated.
+make: *** [src/sorted_strings.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:22:10 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+11:23:29 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:23:29 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+../src/sorted_strings.cpp:14:19: error: no viable conversion from 'void' to 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >')
+          vector<string> x = sort(begin(array), end(array));
+                         ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:551:5: note: candidate constructor not viable: cannot convert argument of incomplete type 'void' to 'const std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > &' for 1st argument
+    vector(const vector& __x);
+    ^
+../src/sorted_strings.cpp:24:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (const string& s : strings.GetSortedStrings()) {
+                       ^
+1 warning and 1 error generated.
+make: *** [src/sorted_strings.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:23:29 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+11:24:01 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:24:01 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+../src/sorted_strings.cpp:14:19: error: no viable conversion from 'void' to 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >')
+          vector<string> x = sort(array.begin(), array.end());
+                         ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:551:5: note: candidate constructor not viable: cannot convert argument of incomplete type 'void' to 'const std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > &' for 1st argument
+    vector(const vector& __x);
+    ^
+../src/sorted_strings.cpp:24:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (const string& s : strings.GetSortedStrings()) {
+                       ^
+1 warning and 1 error generated.
+make: *** [src/sorted_strings.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:24:02 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+11:26:51 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:26:51 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+../src/sorted_strings.cpp:15:11: error: no viable conversion from returned value of type 'const char [4]' to function return type 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >')
+          return "123";
+                 ^~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:551:5: note: candidate constructor not viable: no known conversion from 'const char [4]' to 'const std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > &' for 1st argument
+    vector(const vector& __x);
+    ^
+../src/sorted_strings.cpp:24:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (const string& s : strings.GetSortedStrings()) {
+                       ^
+1 warning and 1 error generated.
+make: *** [src/sorted_strings.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:26:52 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+11:27:37 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:27:37 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+../src/sorted_strings.cpp:25:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (const string& s : strings.GetSortedStrings()) {
+                       ^
+1 warning generated.
+Finished building: ../src/sorted_strings.cpp
+ 
+Building target: sorted_strings
+Invoking: MacOS X C++ Linker
+g++  -o "sorted_strings"  ./src/sorted_strings.o   
+Finished building target: sorted_strings
+ 
+11:27:38 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+11:30:58 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:30:58 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+../src/sorted_strings.cpp:14:6: error: no viable overloaded '='
+          x = sort(array.begin(), array.end());
+          ~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:554:13: note: candidate function not viable: cannot convert argument of incomplete type 'void' to 'const std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >' for 1st argument
+    vector& operator=(const vector& __x);
+            ^
+../src/sorted_strings.cpp:22:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (const string& s : strings.GetSortedStrings()) {
+                       ^
+1 warning and 1 error generated.
+make: *** [src/sorted_strings.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:30:59 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+11:31:41 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:31:42 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+../src/sorted_strings.cpp:22:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (const string& s : strings.GetSortedStrings()) {
+                       ^
+1 warning generated.
+Finished building: ../src/sorted_strings.cpp
+ 
+Building target: sorted_strings
+Invoking: MacOS X C++ Linker
+g++  -o "sorted_strings"  ./src/sorted_strings.o   
+Finished building target: sorted_strings
+ 
+11:31:42 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+11:32:08 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+../src/sorted_strings.cpp:14:11: error: no viable conversion from returned value of type 'void' to function return type 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >')
+          return sort(x.begin(), x.end());;
+                 ^~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:551:5: note: candidate constructor not viable: cannot convert argument of incomplete type 'void' to 'const std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > &' for 1st argument
+    vector(const vector& __x);
+    ^
+../src/sorted_strings.cpp:21:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (const string& s : strings.GetSortedStrings()) {
+                       ^
+1 warning and 1 error generated.
+make: *** [src/sorted_strings.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:32:28 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:32:28 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+../src/sorted_strings.cpp:15:11: error: no viable conversion from returned value of type 'void' to function return type 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >')
+          return sort(x.begin(), x.end());
+                 ^~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:551:5: note: candidate constructor not viable: cannot convert argument of incomplete type 'void' to 'const std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > &' for 1st argument
+    vector(const vector& __x);
+    ^
+../src/sorted_strings.cpp:22:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (const string& s : strings.GetSortedStrings()) {
+                       ^
+1 warning and 1 error generated.
+make: *** [src/sorted_strings.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:32:28 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+11:32:30 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+../src/sorted_strings.cpp:15:11: error: no viable conversion from returned value of type 'void' to function return type 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >')
+          return sort(x.begin(), x.end());
+                 ^~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:551:5: note: candidate constructor not viable: cannot convert argument of incomplete type 'void' to 'const std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > &' for 1st argument
+    vector(const vector& __x);
+    ^
+../src/sorted_strings.cpp:22:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (const string& s : strings.GetSortedStrings()) {
+                       ^
+1 warning and 1 error generated.
+make: *** [src/sorted_strings.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:32:44 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+../src/sorted_strings.cpp:23:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (const string& s : strings.GetSortedStrings()) {
+                       ^
+1 warning generated.
+Finished building: ../src/sorted_strings.cpp
+ 
+Building target: sorted_strings
+Invoking: MacOS X C++ Linker
+g++  -o "sorted_strings"  ./src/sorted_strings.o   
+Finished building target: sorted_strings
+ 
+11:32:51 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+../src/sorted_strings.cpp:22:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (const string& s : strings.GetSortedStrings()) {
+                       ^
+1 warning generated.
+Finished building: ../src/sorted_strings.cpp
+ 
+Building target: sorted_strings
+Invoking: MacOS X C++ Linker
+g++  -o "sorted_strings"  ./src/sorted_strings.o   
+Finished building target: sorted_strings
+ 
+11:43:46 **** Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:16:3: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+../src/names1.cpp:27:17: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (int year : {1900, 1965, 1990}) {
+                ^
+../src/names1.cpp:27:19: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+  for (int year : {1900, 1965, 1990}) {
+                  ^
+../src/names1.cpp:32:17: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (int year : {1969, 1970}) {
+                ^
+../src/names1.cpp:32:19: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+  for (int year : {1969, 1970}) {
+                  ^
+../src/names1.cpp:37:17: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (int year : {1969, 1970}) {
+                ^
+../src/names1.cpp:37:19: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+  for (int year : {1969, 1970}) {
+                  ^
+4 warnings and 3 errors generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:43:47 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:43:47 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+Building file: ../src/sorted_strings.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sorted_strings.d" -MT"src/sorted_strings.o" -o "src/sorted_strings.o" "../src/sorted_strings.cpp"
+../src/sorted_strings.cpp:21:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (const string& s : strings.GetSortedStrings()) {
+                       ^
+1 warning generated.
+Finished building: ../src/sorted_strings.cpp
+ 
+Building target: sorted_strings
+Invoking: MacOS X C++ Linker
+g++  -o "sorted_strings"  ./src/sorted_strings.o   
+Finished building target: sorted_strings
+ 
+11:43:48 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+11:44:05 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:16:3: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+1 warning generated.
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+11:44:06 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:44:06 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+11:44:07 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+11:45:42 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:16:3: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+1 warning generated.
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+11:45:43 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:45:43 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+11:45:43 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+12:10:11 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:13:32: error: no viable overloaded operator[] for type 'map<int, Person::Note>'
+          temp.LastName = change_story[change_story.rbegin()-1].LastName;
+                          ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1095:18: note: candidate function not viable: no known conversion from 'std::__1::reverse_iterator<std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> > >' to 'const std::__1::map<int, Person::Note, std::__1::less<int>, std::__1::allocator<std::__1::pair<const int, Person::Note> > >::key_type' (aka 'const int') for 1st argument
+    mapped_type& operator[](const key_type& __k);
+                 ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1097:18: note: candidate function not viable: no known conversion from 'std::__1::reverse_iterator<std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> > >' to 'std::__1::map<int, Person::Note, std::__1::less<int>, std::__1::allocator<std::__1::pair<const int, Person::Note> > >::key_type' (aka 'int') for 1st argument
+    mapped_type& operator[](key_type&& __k);
+                 ^
+../src/names1.cpp:14:25: error: expected expression
+          change_story[year] = ;
+                               ^
+In file included from ../src/names1.cpp:1:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/iostream:38:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/ios:216:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/__locale:15:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/string:500:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:176:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/__string:56:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm:644:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/memory:660:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:684:94: error: invalid operands to binary expression ('const std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> >' and 'std::__1::reverse_iterator<std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> > >::difference_type' (aka 'long'))
+    reverse_iterator  operator- (difference_type __n) const {return reverse_iterator(current + __n);}
+                                                                                     ~~~~~~~ ^ ~~~
+../src/names1.cpp:13:54: note: in instantiation of member function 'std::__1::reverse_iterator<std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> > >::operator-' requested here
+          temp.LastName = change_story[change_story.rbegin()-1].LastName;
+                                                            ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:761:1: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'long'
+operator+(typename reverse_iterator<_Iter>::difference_type __n, const reverse_iterator<_Iter>& __x)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1202:1: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'long'
+operator+(typename move_iterator<_Iter>::difference_type __n, const move_iterator<_Iter>& __x)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1476:5: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'long'
+    operator+(typename __wrap_iter<_Iter1>::difference_type, __wrap_iter<_Iter1>) _NOEXCEPT_DEBUG;
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3993:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4006:1: note: candidate template ignored: could not match 'const _CharT *' against 'std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> >'
+operator+(const _CharT* __lhs , const basic_string<_CharT,_Traits,_Allocator>& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4018:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'long'
+operator+(_CharT __lhs, const basic_string<_CharT,_Traits,_Allocator>& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4029:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs, const _CharT* __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4041:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs, _CharT __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4055:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(basic_string<_CharT, _Traits, _Allocator>&& __lhs, const basic_string<_CharT, _Traits, _Allocator>& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4063:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs, basic_string<_CharT, _Traits, _Allocator>&& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4071:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(basic_string<_CharT, _Traits, _Allocator>&& __lhs, basic_string<_CharT, _Traits, _Allocator>&& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4079:1: note: candidate template ignored: could not match 'const _CharT *' against 'std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> >'
+operator+(const _CharT* __lhs , basic_string<_CharT,_Traits,_Allocator>&& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4087:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'long'
+operator+(_CharT __lhs, basic_string<_CharT,_Traits,_Allocator>&& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4096:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(basic_string<_CharT, _Traits, _Allocator>&& __lhs, const _CharT* __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4104:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(basic_string<_CharT, _Traits, _Allocator>&& __lhs, _CharT __rhs)
+^
+3 errors generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:10:13 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+12:10:13 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+12:10:13 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+12:10:17 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:13:32: error: no viable overloaded operator[] for type 'map<int, Person::Note>'
+          temp.LastName = change_story[change_story.rbegin()-1].LastName;
+                          ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1095:18: note: candidate function not viable: no known conversion from 'std::__1::reverse_iterator<std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> > >' to 'const std::__1::map<int, Person::Note, std::__1::less<int>, std::__1::allocator<std::__1::pair<const int, Person::Note> > >::key_type' (aka 'const int') for 1st argument
+    mapped_type& operator[](const key_type& __k);
+                 ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1097:18: note: candidate function not viable: no known conversion from 'std::__1::reverse_iterator<std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> > >' to 'std::__1::map<int, Person::Note, std::__1::less<int>, std::__1::allocator<std::__1::pair<const int, Person::Note> > >::key_type' (aka 'int') for 1st argument
+    mapped_type& operator[](key_type&& __k);
+                 ^
+In file included from ../src/names1.cpp:1:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/iostream:38:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/ios:216:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/__locale:15:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/string:500:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:176:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/__string:56:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm:644:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/memory:660:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:684:94: error: invalid operands to binary expression ('const std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> >' and 'std::__1::reverse_iterator<std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> > >::difference_type' (aka 'long'))
+    reverse_iterator  operator- (difference_type __n) const {return reverse_iterator(current + __n);}
+                                                                                     ~~~~~~~ ^ ~~~
+../src/names1.cpp:13:54: note: in instantiation of member function 'std::__1::reverse_iterator<std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> > >::operator-' requested here
+          temp.LastName = change_story[change_story.rbegin()-1].LastName;
+                                                            ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:761:1: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'long'
+operator+(typename reverse_iterator<_Iter>::difference_type __n, const reverse_iterator<_Iter>& __x)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1202:1: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'long'
+operator+(typename move_iterator<_Iter>::difference_type __n, const move_iterator<_Iter>& __x)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1476:5: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'long'
+    operator+(typename __wrap_iter<_Iter1>::difference_type, __wrap_iter<_Iter1>) _NOEXCEPT_DEBUG;
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3993:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4006:1: note: candidate template ignored: could not match 'const _CharT *' against 'std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> >'
+operator+(const _CharT* __lhs , const basic_string<_CharT,_Traits,_Allocator>& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4018:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'long'
+operator+(_CharT __lhs, const basic_string<_CharT,_Traits,_Allocator>& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4029:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs, const _CharT* __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4041:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs, _CharT __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4055:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(basic_string<_CharT, _Traits, _Allocator>&& __lhs, const basic_string<_CharT, _Traits, _Allocator>& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4063:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs, basic_string<_CharT, _Traits, _Allocator>&& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4071:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(basic_string<_CharT, _Traits, _Allocator>&& __lhs, basic_string<_CharT, _Traits, _Allocator>&& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4079:1: note: candidate template ignored: could not match 'const _CharT *' against 'std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> >'
+operator+(const _CharT* __lhs , basic_string<_CharT,_Traits,_Allocator>&& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4087:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'long'
+operator+(_CharT __lhs, basic_string<_CharT,_Traits,_Allocator>&& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4096:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(basic_string<_CharT, _Traits, _Allocator>&& __lhs, const _CharT* __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4104:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(basic_string<_CharT, _Traits, _Allocator>&& __lhs, _CharT __rhs)
+^
+2 errors generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:10:18 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+12:10:18 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+12:10:18 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+12:10:44 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:13:32: error: no viable overloaded operator[] for type 'map<int, Person::Note>'
+          temp.LastName = change_story[change_story.rbegin()-1].LastName;
+                          ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1095:18: note: candidate function not viable: no known conversion from 'std::__1::reverse_iterator<std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> > >' to 'const std::__1::map<int, Person::Note, std::__1::less<int>, std::__1::allocator<std::__1::pair<const int, Person::Note> > >::key_type' (aka 'const int') for 1st argument
+    mapped_type& operator[](const key_type& __k);
+                 ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1097:18: note: candidate function not viable: no known conversion from 'std::__1::reverse_iterator<std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> > >' to 'std::__1::map<int, Person::Note, std::__1::less<int>, std::__1::allocator<std::__1::pair<const int, Person::Note> > >::key_type' (aka 'int') for 1st argument
+    mapped_type& operator[](key_type&& __k);
+                 ^
+In file included from ../src/names1.cpp:1:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/iostream:38:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/ios:216:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/__locale:15:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/string:500:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:176:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/__string:56:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm:644:
+In file included from /Library/Developer/CommandLineTools/usr/include/c++/v1/memory:660:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:684:94: error: invalid operands to binary expression ('const std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> >' and 'std::__1::reverse_iterator<std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> > >::difference_type' (aka 'long'))
+    reverse_iterator  operator- (difference_type __n) const {return reverse_iterator(current + __n);}
+                                                                                     ~~~~~~~ ^ ~~~
+../src/names1.cpp:13:54: note: in instantiation of member function 'std::__1::reverse_iterator<std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> > >::operator-' requested here
+          temp.LastName = change_story[change_story.rbegin()-1].LastName;
+                                                            ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:761:1: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'long'
+operator+(typename reverse_iterator<_Iter>::difference_type __n, const reverse_iterator<_Iter>& __x)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1202:1: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'long'
+operator+(typename move_iterator<_Iter>::difference_type __n, const move_iterator<_Iter>& __x)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1476:5: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'long'
+    operator+(typename __wrap_iter<_Iter1>::difference_type, __wrap_iter<_Iter1>) _NOEXCEPT_DEBUG;
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3993:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4006:1: note: candidate template ignored: could not match 'const _CharT *' against 'std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> >'
+operator+(const _CharT* __lhs , const basic_string<_CharT,_Traits,_Allocator>& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4018:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'long'
+operator+(_CharT __lhs, const basic_string<_CharT,_Traits,_Allocator>& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4029:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs, const _CharT* __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4041:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs, _CharT __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4055:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(basic_string<_CharT, _Traits, _Allocator>&& __lhs, const basic_string<_CharT, _Traits, _Allocator>& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4063:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs, basic_string<_CharT, _Traits, _Allocator>&& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4071:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(basic_string<_CharT, _Traits, _Allocator>&& __lhs, basic_string<_CharT, _Traits, _Allocator>&& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4079:1: note: candidate template ignored: could not match 'const _CharT *' against 'std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> >'
+operator+(const _CharT* __lhs , basic_string<_CharT,_Traits,_Allocator>&& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4087:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'long'
+operator+(_CharT __lhs, basic_string<_CharT,_Traits,_Allocator>&& __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4096:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(basic_string<_CharT, _Traits, _Allocator>&& __lhs, const _CharT* __rhs)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:4104:1: note: candidate template ignored: could not match 'basic_string' against '__map_iterator'
+operator+(basic_string<_CharT, _Traits, _Allocator>&& __lhs, _CharT __rhs)
+^
+2 errors generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:10:45 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+12:10:45 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+12:10:45 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+12:11:15 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:22:3: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+1 warning generated.
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+12:11:16 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+12:11:17 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+12:11:17 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+12:14:10 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+12:14:11 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+12:14:11 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+12:14:11 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+12:14:16 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+12:15:45 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+12:16:04 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+12:16:28 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+12:20:50 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:14:25: error: invalid operands to binary expression ('int' and 'std::__1::map<int, Person::Note, std::__1::less<int>, std::__1::allocator<std::__1::pair<const int, Person::Note> > >::iterator' (aka '__map_iterator<__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> >'))
+          for (int i = year; i > change_story.begin(); i--) {
+                             ~ ^ ~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/utility:602:1: note: candidate template ignored: could not match 'pair<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator> (const pair<_T1,_T2>& __x, const pair<_T1,_T2>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:718:1: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'int'
+operator>(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1159:1: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'int'
+operator>(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1535:1: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'int'
+operator>(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT_DEBUG
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1567:1: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'int'
+operator>(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter1>& __y) _NOEXCEPT_DEBUG
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/tuple:1190:1: note: candidate template ignored: could not match 'tuple<type-parameter-0-0...>' against 'int'
+operator>(const tuple<_Tp...>& __x, const tuple<_Up...>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:2981:1: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator> (const unique_ptr<_T1, _D1>& __x, const unique_ptr<_T2, _D2>& __y) {return __y < __x;}
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:3046:1: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator>(const unique_ptr<_T1, _D1>& __x, nullptr_t)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:3054:1: note: candidate template ignored: could not match 'unique_ptr' against '__map_iterator'
+operator>(nullptr_t, const unique_ptr<_T1, _D1>& __x)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:4822:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'int'
+operator>(const shared_ptr<_Tp>& __x, const shared_ptr<_Up>& __y) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:4894:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'int'
+operator>(const shared_ptr<_Tp>& __x, nullptr_t) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:4902:1: note: candidate template ignored: could not match 'shared_ptr' against '__map_iterator'
+operator>(nullptr_t, const shared_ptr<_Tp>& __x) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:698:6: note: candidate template ignored: could not match 'basic_string_view<type-parameter-0-0, type-parameter-0-1>' against 'int'
+bool operator> (basic_string_view<_CharT, _Traits> __lhs, basic_string_view<_CharT, _Traits> __rhs) _NOEXCEPT
+     ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:705:6: note: candidate template ignored: could not match 'basic_string_view<type-parameter-0-0, type-parameter-0-1>' against 'int'
+bool operator>(basic_string_view<_CharT, _Traits> __lhs,
+     ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:713:6: note: candidate template ignored: could not match 'basic_string_view' against '__map_iterator'
+bool operator>(typename common_type<basic_string_view<_CharT, _Traits> >::type __lhs, 
+     ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3907:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'int'
+operator> (const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3916:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'int'
+operator> (const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3925:1: note: candidate template ignored: could not match 'const _CharT *' against 'int'
+operator> (const _CharT* __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:3365:1: note: candidate template ignored: could not match 'vector<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator> (const vector<_Tp, _Allocator>& __x, const vector<_Tp, _Allocator>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1527:1: note: candidate template ignored: could not match 'map<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2, type-parameter-0-3>' against 'int'
+operator> (const map<_Key, _Tp, _Compare, _Allocator>& __x,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:2027:1: note: candidate template ignored: could not match 'multimap<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2, type-parameter-0-3>' against 'int'
+operator> (const multimap<_Key, _Tp, _Compare, _Allocator>& __x,
+^
+../src/names1.cpp:15:50: error: no member named 'LastName' in 'std::__1::map<int, Person::Note, std::__1::less<int>, std::__1::allocator<std::__1::pair<const int, Person::Note> > >'
+                  if(change_story.count(i) > 0 && change_story.LastName.size() != 0) {
+                                                  ~~~~~~~~~~~~ ^
+2 errors generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:20:51 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+12:20:51 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+12:20:52 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+14:03:07 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:14:25: error: invalid operands to binary expression ('int' and 'std::__1::map<int, Person::Note, std::__1::less<int>, std::__1::allocator<std::__1::pair<const int, Person::Note> > >::iterator' (aka '__map_iterator<__tree_iterator<std::__1::__value_type<int, Person::Note>, std::__1::__tree_node<std::__1::__value_type<int, Person::Note>, void *> *, long> >'))
+          for (int i = year; i > change_story.begin(); i--) {
+                             ~ ^ ~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/utility:602:1: note: candidate template ignored: could not match 'pair<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator> (const pair<_T1,_T2>& __x, const pair<_T1,_T2>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:718:1: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'int'
+operator>(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1159:1: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'int'
+operator>(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1535:1: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'int'
+operator>(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT_DEBUG
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1567:1: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'int'
+operator>(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter1>& __y) _NOEXCEPT_DEBUG
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/tuple:1190:1: note: candidate template ignored: could not match 'tuple<type-parameter-0-0...>' against 'int'
+operator>(const tuple<_Tp...>& __x, const tuple<_Up...>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:2981:1: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator> (const unique_ptr<_T1, _D1>& __x, const unique_ptr<_T2, _D2>& __y) {return __y < __x;}
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:3046:1: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator>(const unique_ptr<_T1, _D1>& __x, nullptr_t)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:3054:1: note: candidate template ignored: could not match 'unique_ptr' against '__map_iterator'
+operator>(nullptr_t, const unique_ptr<_T1, _D1>& __x)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:4822:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'int'
+operator>(const shared_ptr<_Tp>& __x, const shared_ptr<_Up>& __y) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:4894:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'int'
+operator>(const shared_ptr<_Tp>& __x, nullptr_t) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:4902:1: note: candidate template ignored: could not match 'shared_ptr' against '__map_iterator'
+operator>(nullptr_t, const shared_ptr<_Tp>& __x) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:698:6: note: candidate template ignored: could not match 'basic_string_view<type-parameter-0-0, type-parameter-0-1>' against 'int'
+bool operator> (basic_string_view<_CharT, _Traits> __lhs, basic_string_view<_CharT, _Traits> __rhs) _NOEXCEPT
+     ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:705:6: note: candidate template ignored: could not match 'basic_string_view<type-parameter-0-0, type-parameter-0-1>' against 'int'
+bool operator>(basic_string_view<_CharT, _Traits> __lhs,
+     ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:713:6: note: candidate template ignored: could not match 'basic_string_view' against '__map_iterator'
+bool operator>(typename common_type<basic_string_view<_CharT, _Traits> >::type __lhs, 
+     ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3907:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'int'
+operator> (const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3916:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'int'
+operator> (const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3925:1: note: candidate template ignored: could not match 'const _CharT *' against 'int'
+operator> (const _CharT* __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:3365:1: note: candidate template ignored: could not match 'vector<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator> (const vector<_Tp, _Allocator>& __x, const vector<_Tp, _Allocator>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1527:1: note: candidate template ignored: could not match 'map<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2, type-parameter-0-3>' against 'int'
+operator> (const map<_Key, _Tp, _Compare, _Allocator>& __x,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:2027:1: note: candidate template ignored: could not match 'multimap<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2, type-parameter-0-3>' against 'int'
+operator> (const multimap<_Key, _Tp, _Compare, _Allocator>& __x,
+^
+../src/names1.cpp:15:50: error: no member named 'LastName' in 'std::__1::map<int, Person::Note, std::__1::less<int>, std::__1::allocator<std::__1::pair<const int, Person::Note> > >'
+                  if(change_story.count(i) > 0 && change_story.LastName.size() != 0) {
+                                                  ~~~~~~~~~~~~ ^
+2 errors generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:03:08 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+14:03:09 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+14:03:09 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+14:04:06 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:21:3: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+../src/names1.cpp:27:22: error: invalid operands to binary expression ('int' and 'std::__1::map<int, std::__1::basic_string<char>, std::__1::less<int>, std::__1::allocator<std::__1::pair<const int, std::__1::basic_string<char> > > >::iterator' (aka '__map_iterator<__tree_iterator<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__tree_node<std::__1::__value_type<int, std::__1::basic_string<char> >, void *> *, long> >'))
+          for (int i = n; i > array.begin(), --i) {
+                          ~ ^ ~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/utility:602:1: note: candidate template ignored: could not match 'pair<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator> (const pair<_T1,_T2>& __x, const pair<_T1,_T2>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:718:1: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'int'
+operator>(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1159:1: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'int'
+operator>(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1535:1: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'int'
+operator>(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT_DEBUG
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1567:1: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'int'
+operator>(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter1>& __y) _NOEXCEPT_DEBUG
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/tuple:1190:1: note: candidate template ignored: could not match 'tuple<type-parameter-0-0...>' against 'int'
+operator>(const tuple<_Tp...>& __x, const tuple<_Up...>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:2981:1: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator> (const unique_ptr<_T1, _D1>& __x, const unique_ptr<_T2, _D2>& __y) {return __y < __x;}
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:3046:1: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator>(const unique_ptr<_T1, _D1>& __x, nullptr_t)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:3054:1: note: candidate template ignored: could not match 'unique_ptr' against '__map_iterator'
+operator>(nullptr_t, const unique_ptr<_T1, _D1>& __x)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:4822:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'int'
+operator>(const shared_ptr<_Tp>& __x, const shared_ptr<_Up>& __y) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:4894:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'int'
+operator>(const shared_ptr<_Tp>& __x, nullptr_t) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:4902:1: note: candidate template ignored: could not match 'shared_ptr' against '__map_iterator'
+operator>(nullptr_t, const shared_ptr<_Tp>& __x) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:698:6: note: candidate template ignored: could not match 'basic_string_view<type-parameter-0-0, type-parameter-0-1>' against 'int'
+bool operator> (basic_string_view<_CharT, _Traits> __lhs, basic_string_view<_CharT, _Traits> __rhs) _NOEXCEPT
+     ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:705:6: note: candidate template ignored: could not match 'basic_string_view<type-parameter-0-0, type-parameter-0-1>' against 'int'
+bool operator>(basic_string_view<_CharT, _Traits> __lhs,
+     ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:713:6: note: candidate template ignored: could not match 'basic_string_view' against '__map_iterator'
+bool operator>(typename common_type<basic_string_view<_CharT, _Traits> >::type __lhs, 
+     ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3907:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'int'
+operator> (const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3916:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'int'
+operator> (const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3925:1: note: candidate template ignored: could not match 'const _CharT *' against 'int'
+operator> (const _CharT* __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:3365:1: note: candidate template ignored: could not match 'vector<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator> (const vector<_Tp, _Allocator>& __x, const vector<_Tp, _Allocator>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1527:1: note: candidate template ignored: could not match 'map<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2, type-parameter-0-3>' against 'int'
+operator> (const map<_Key, _Tp, _Compare, _Allocator>& __x,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:2027:1: note: candidate template ignored: could not match 'multimap<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2, type-parameter-0-3>' against 'int'
+operator> (const multimap<_Key, _Tp, _Compare, _Allocator>& __x,
+^
+1 warning and 1 error generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:04:07 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+14:04:07 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+14:04:07 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+14:04:55 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:20:3: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+../src/names1.cpp:26:22: error: invalid operands to binary expression ('int' and 'decltype(__c.begin())' (aka '__map_iterator<__tree_iterator<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__tree_node<std::__1::__value_type<int, std::__1::basic_string<char> >, void *> *, long> >'))
+          for (int i = n; i > begin(array), --i) {
+                          ~ ^ ~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/utility:602:1: note: candidate template ignored: could not match 'pair<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator> (const pair<_T1,_T2>& __x, const pair<_T1,_T2>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:718:1: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'int'
+operator>(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1159:1: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'int'
+operator>(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1535:1: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'int'
+operator>(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT_DEBUG
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1567:1: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'int'
+operator>(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter1>& __y) _NOEXCEPT_DEBUG
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/tuple:1190:1: note: candidate template ignored: could not match 'tuple<type-parameter-0-0...>' against 'int'
+operator>(const tuple<_Tp...>& __x, const tuple<_Up...>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:2981:1: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator> (const unique_ptr<_T1, _D1>& __x, const unique_ptr<_T2, _D2>& __y) {return __y < __x;}
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:3046:1: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator>(const unique_ptr<_T1, _D1>& __x, nullptr_t)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:3054:1: note: candidate template ignored: could not match 'unique_ptr' against '__map_iterator'
+operator>(nullptr_t, const unique_ptr<_T1, _D1>& __x)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:4822:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'int'
+operator>(const shared_ptr<_Tp>& __x, const shared_ptr<_Up>& __y) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:4894:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'int'
+operator>(const shared_ptr<_Tp>& __x, nullptr_t) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:4902:1: note: candidate template ignored: could not match 'shared_ptr' against '__map_iterator'
+operator>(nullptr_t, const shared_ptr<_Tp>& __x) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:698:6: note: candidate template ignored: could not match 'basic_string_view<type-parameter-0-0, type-parameter-0-1>' against 'int'
+bool operator> (basic_string_view<_CharT, _Traits> __lhs, basic_string_view<_CharT, _Traits> __rhs) _NOEXCEPT
+     ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:705:6: note: candidate template ignored: could not match 'basic_string_view<type-parameter-0-0, type-parameter-0-1>' against 'int'
+bool operator>(basic_string_view<_CharT, _Traits> __lhs,
+     ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:713:6: note: candidate template ignored: could not match 'basic_string_view' against '__map_iterator'
+bool operator>(typename common_type<basic_string_view<_CharT, _Traits> >::type __lhs, 
+     ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3907:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'int'
+operator> (const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3916:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'int'
+operator> (const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3925:1: note: candidate template ignored: could not match 'const _CharT *' against 'int'
+operator> (const _CharT* __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:3365:1: note: candidate template ignored: could not match 'vector<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator> (const vector<_Tp, _Allocator>& __x, const vector<_Tp, _Allocator>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1527:1: note: candidate template ignored: could not match 'map<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2, type-parameter-0-3>' against 'int'
+operator> (const map<_Key, _Tp, _Compare, _Allocator>& __x,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:2027:1: note: candidate template ignored: could not match 'multimap<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2, type-parameter-0-3>' against 'int'
+operator> (const multimap<_Key, _Tp, _Compare, _Allocator>& __x,
+^
+1 warning and 1 error generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:04:56 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+14:04:56 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+14:04:57 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+14:14:46 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:32:3: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+1 warning generated.
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+14:14:47 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+14:14:47 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+14:14:47 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+14:16:22 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:31:32: error: expected ';' after return statement
+          else return first_name + " " last_name;
+                                      ^
+                                      ;
+1 error generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:16:23 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+14:16:23 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+14:16:24 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+14:16:30 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:32:28: error: expected ';' after return statement
+                  return first_name + " " last_name;
+                                         ^
+                                         ;
+1 error generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:16:31 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+14:16:31 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+14:16:31 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+14:16:45 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+14:37:19 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+14:37:21 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+14:37:21 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+14:37:21 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+14:37:25 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+14:38:21 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+14:41:32 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+14:43:01 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+14:43:17 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+14:43:26 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+14:45:34 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+14:45:46 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+14:45:59 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+14:46:31 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+14:46:44 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [names1] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:46:44 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+14:46:44 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+14:46:45 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+14:48:51 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+14:56:41 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:95:1: warning: '/*' within block comment [-Wcomment]
+/*
+^
+1 warning generated.
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [names1] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:56:41 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+14:56:42 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+14:56:42 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+14:57:04 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [names1] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:57:05 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+14:57:05 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+14:57:05 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+14:57:18 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+14:57:19 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+14:57:19 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+14:57:19 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+14:57:26 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+15:02:16 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+15:02:26 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+15:03:03 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+15:04:24 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+15:04:24 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+15:04:25 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+15:04:25 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+15:04:26 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+15:04:34 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+15:04:36 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+15:04:46 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+15:04:54 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+15:09:46 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+15:16:22 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+11:36:20 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [names1] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:36:21 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:36:22 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+11:36:22 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+11:37:06 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+11:37:08 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+11:37:08 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+11:37:08 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:42:00 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+01:42:00 **** Build of configuration Debug for project reversible_string ****
+make all 
+Building file: ../src/reversible_string.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/reversible_string.d" -MT"src/reversible_string.o" -o "src/reversible_string.o" "../src/reversible_string.cpp"
+../src/reversible_string.cpp:17:10: error: reference to non-static member function must be called; did you mean to call it with no arguments?
+                return ToString;
+                       ^~~~~~~~
+                               ()
+../src/reversible_string.cpp:30:16: error: 'this' argument to member function 'ToString' has type 'const ReversibleString', but function is not marked const
+  string tmp = s_ref.ToString();
+               ^~~~~
+../src/reversible_string.cpp:16:9: note: 'ToString' declared here
+        string ToString() {
+               ^
+../src/reversible_string.cpp:33:20: error: no matching constructor for initialization of 'ReversibleString'
+  ReversibleString empty;
+                   ^
+../src/reversible_string.cpp:7:2: note: candidate constructor not viable: requires single argument 's', but no arguments were provided
+        ReversibleString(string s) {
+        ^
+../src/reversible_string.cpp:5:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 0 were provided
+class ReversibleString {
+      ^
+3 errors generated.
+make: *** [src/reversible_string.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:42:01 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:42:01 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:42:02 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:42:50 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+01:42:50 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+Building file: ../src/reversible_string.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/reversible_string.d" -MT"src/reversible_string.o" -o "src/reversible_string.o" "../src/reversible_string.cpp"
+../src/reversible_string.cpp:20:10: error: reference to non-static member function must be called; did you mean to call it with no arguments?
+                return ToString;
+                       ^~~~~~~~
+                               ()
+../src/reversible_string.cpp:33:16: error: 'this' argument to member function 'ToString' has type 'const ReversibleString', but function is not marked const
+  string tmp = s_ref.ToString();
+               ^~~~~
+../src/reversible_string.cpp:19:9: note: 'ToString' declared here
+        string ToString() {
+               ^
+2 errors generated.
+make: *** [src/reversible_string.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:42:51 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:42:51 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:42:51 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:43:02 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+01:43:03 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+Building file: ../src/reversible_string.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/reversible_string.d" -MT"src/reversible_string.o" -o "src/reversible_string.o" "../src/reversible_string.cpp"
+../src/reversible_string.cpp:33:16: error: 'this' argument to member function 'ToString' has type 'const ReversibleString', but function is not marked const
+  string tmp = s_ref.ToString();
+               ^~~~~
+../src/reversible_string.cpp:19:9: note: 'ToString' declared here
+        string ToString() {
+               ^
+1 error generated.
+make: *** [src/reversible_string.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:43:03 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:43:03 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:43:03 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:43:20 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+01:43:20 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+Building file: ../src/reversible_string.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/reversible_string.d" -MT"src/reversible_string.o" -o "src/reversible_string.o" "../src/reversible_string.cpp"
+../src/reversible_string.cpp:32:27: warning: unused variable 's_ref' [-Wunused-variable]
+  const ReversibleString& s_ref = s;
+                          ^
+1 warning generated.
+Finished building: ../src/reversible_string.cpp
+ 
+Building target: reversible_string
+Invoking: MacOS X C++ Linker
+g++  -o "reversible_string"  ./src/reversible_string.o   
+Finished building target: reversible_string
+ 
+01:43:21 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:43:21 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:43:21 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:43:26 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+01:43:26 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+Building file: ../src/reversible_string.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/reversible_string.d" -MT"src/reversible_string.o" -o "src/reversible_string.o" "../src/reversible_string.cpp"
+Finished building: ../src/reversible_string.cpp
+ 
+Building target: reversible_string
+Invoking: MacOS X C++ Linker
+g++  -o "reversible_string"  ./src/reversible_string.o   
+Finished building target: reversible_string
+ 
+01:43:27 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:43:27 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:43:27 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:43:33 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+01:43:51 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+Building file: ../src/reversible_string.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/reversible_string.d" -MT"src/reversible_string.o" -o "src/reversible_string.o" "../src/reversible_string.cpp"
+Finished building: ../src/reversible_string.cpp
+ 
+Building target: reversible_string
+Invoking: MacOS X C++ Linker
+g++  -o "reversible_string"  ./src/reversible_string.o   
+Finished building target: reversible_string
+ 
+01:44:20 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+01:44:21 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+Building file: ../src/reversible_string.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/reversible_string.d" -MT"src/reversible_string.o" -o "src/reversible_string.o" "../src/reversible_string.cpp"
+../src/reversible_string.cpp:34:16: error: 'this' argument to member function 'ToString' has type 'const ReversibleString', but function is not marked const
+  string tmp = s_ref.ToString();
+               ^~~~~
+../src/reversible_string.cpp:20:9: note: 'ToString' declared here
+        string ToString() {
+               ^
+1 error generated.
+make: *** [src/reversible_string.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:44:21 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:44:21 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:44:22 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:44:39 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+01:44:39 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+Building file: ../src/reversible_string.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/reversible_string.d" -MT"src/reversible_string.o" -o "src/reversible_string.o" "../src/reversible_string.cpp"
+Finished building: ../src/reversible_string.cpp
+ 
+Building target: reversible_string
+Invoking: MacOS X C++ Linker
+g++  -o "reversible_string"  ./src/reversible_string.o   
+Finished building target: reversible_string
+ 
+01:44:40 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:44:40 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:44:40 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:44:49 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+01:51:39 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:17:20: error: no viable overloaded operator[] for type 'const map<int, std::__1::string>' (aka 'const map<int, basic_string<char, char_traits<char>, allocator<char> > >')
+          story_first_name[year] = first_name;
+          ~~~~~~~~~~~~~~~~^~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1095:18: note: candidate function not viable: 'this' argument has type 'const map<int, std::__1::string>' (aka 'const map<int, basic_string<char, char_traits<char>, allocator<char> > >'), but method is not marked const
+    mapped_type& operator[](const key_type& __k);
+                 ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1097:18: note: candidate function not viable: 'this' argument has type 'const map<int, std::__1::string>' (aka 'const map<int, basic_string<char, char_traits<char>, allocator<char> > >'), but method is not marked const
+    mapped_type& operator[](key_type&& __k);
+                 ^
+../src/names1.cpp:21:19: error: no viable overloaded operator[] for type 'const map<int, std::__1::string>' (aka 'const map<int, basic_string<char, char_traits<char>, allocator<char> > >')
+          story_last_name[year] = last_name;
+          ~~~~~~~~~~~~~~~^~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1095:18: note: candidate function not viable: 'this' argument has type 'const map<int, std::__1::string>' (aka 'const map<int, basic_string<char, char_traits<char>, allocator<char> > >'), but method is not marked const
+    mapped_type& operator[](const key_type& __k);
+                 ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1097:18: note: candidate function not viable: 'this' argument has type 'const map<int, std::__1::string>' (aka 'const map<int, basic_string<char, char_traits<char>, allocator<char> > >'), but method is not marked const
+    mapped_type& operator[](key_type&& __k);
+                 ^
+../src/names1.cpp:97:15: error: redefinition of 'd'
+  vector<int> d = {1965, 1967};
+              ^
+../src/names1.cpp:90:15: note: previous definition is here
+  vector<int> d = {1959, 1960};
+              ^
+3 errors generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:51:40 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+01:51:40 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:51:40 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:51:40 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:51:49 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:17:20: error: no viable overloaded operator[] for type 'const map<int, std::__1::string>' (aka 'const map<int, basic_string<char, char_traits<char>, allocator<char> > >')
+          story_first_name[year] = first_name;
+          ~~~~~~~~~~~~~~~~^~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1095:18: note: candidate function not viable: 'this' argument has type 'const map<int, std::__1::string>' (aka 'const map<int, basic_string<char, char_traits<char>, allocator<char> > >'), but method is not marked const
+    mapped_type& operator[](const key_type& __k);
+                 ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1097:18: note: candidate function not viable: 'this' argument has type 'const map<int, std::__1::string>' (aka 'const map<int, basic_string<char, char_traits<char>, allocator<char> > >'), but method is not marked const
+    mapped_type& operator[](key_type&& __k);
+                 ^
+../src/names1.cpp:21:19: error: no viable overloaded operator[] for type 'const map<int, std::__1::string>' (aka 'const map<int, basic_string<char, char_traits<char>, allocator<char> > >')
+          story_last_name[year] = last_name;
+          ~~~~~~~~~~~~~~~^~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1095:18: note: candidate function not viable: 'this' argument has type 'const map<int, std::__1::string>' (aka 'const map<int, basic_string<char, char_traits<char>, allocator<char> > >'), but method is not marked const
+    mapped_type& operator[](const key_type& __k);
+                 ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:1097:18: note: candidate function not viable: 'this' argument has type 'const map<int, std::__1::string>' (aka 'const map<int, basic_string<char, char_traits<char>, allocator<char> > >'), but method is not marked const
+    mapped_type& operator[](key_type&& __k);
+                 ^
+2 errors generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:51:50 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+01:51:50 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:51:50 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:51:50 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:52:03 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+01:52:04 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+01:52:04 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:52:04 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:52:04 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:52:18 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+01:52:33 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+01:52:34 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+01:52:34 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:52:34 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:52:34 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:52:38 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+01:56:08 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:25:32: error: no member named 'first' in 'std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__tree_node<std::__1::__value_type<int, std::__1::basic_string<char> >, void *> *, long> >'; did you mean to use '->' instead of '.'?
+          if (story_first_name.begin().first >= year || story_last_name.begin().first >= year)
+                                      ^
+                                      ->
+../src/names1.cpp:25:73: error: no member named 'first' in 'std::__1::__map_iterator<std::__1::__tree_iterator<std::__1::__value_type<int, std::__1::basic_string<char> >, std::__1::__tree_node<std::__1::__value_type<int, std::__1::basic_string<char> >, void *> *, long> >'; did you mean to use '->' instead of '.'?
+          if (story_first_name.begin().first >= year || story_last_name.begin().first >= year)
+                                                                               ^
+                                                                               ->
+2 errors generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:56:09 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+01:56:09 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:56:09 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:56:09 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:57:00 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:28:3: warning: control may reach end of non-void function [-Wreturn-type]
+  }
+  ^
+1 warning generated.
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+01:57:01 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+01:57:02 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:57:02 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:57:02 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:57:06 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+01:57:42 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:26:8: error: invalid operands to binary expression ('std::__1::istream' (aka 'basic_istream<char>') and 'const char [14]')
+          cin << "dsadsadsaddas" << x << endl;
+          ~~~ ^  ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:748:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:755:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:788:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<char, _Traits>& __os, char __c)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:795:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<char, _Traits>& __os, signed char __c)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:802:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:809:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:816:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:862:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<char, _Traits>& __os, const char* __str)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:869:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:877:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:1044:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:1069:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:1088:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:1034:1: note: candidate template ignored: requirement '!is_lvalue_reference<basic_istream<char> &>::value' was not satisfied [with _Stream = std::__1::basic_istream<char> &, _Tp = char [14]]
+operator<<(_Stream&& __os, const _Tp& __x)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:1052:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:1061:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ostream:1081:1: note: candidate template ignored: could not match 'basic_ostream' against 'basic_istream'
+operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p)
+^
+1 error generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:57:43 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+01:57:43 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:57:43 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:57:44 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:57:50 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:30:3: warning: control may reach end of non-void function [-Wreturn-type]
+  }
+  ^
+1 warning generated.
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+01:57:51 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+01:57:51 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:57:51 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:57:52 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:58:02 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:25:8: warning: unused variable 'x' [-Wunused-variable]
+          int x = story_first_name.begin()->first;
+              ^
+../src/names1.cpp:29:3: warning: control may reach end of non-void function [-Wreturn-type]
+  }
+  ^
+2 warnings generated.
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+01:58:03 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+01:58:03 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:58:03 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:58:03 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:58:11 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:25:8: warning: unused variable 'x' [-Wunused-variable]
+          int x = story_first_name.begin()->first;
+              ^
+1 warning generated.
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+01:58:12 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+01:58:13 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:58:13 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:58:13 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+01:58:27 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+01:58:27 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+01:58:27 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+01:58:27 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+01:58:28 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+02:01:06 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:92:26: error: cannot initialize a parameter of type 'int' with an lvalue of type 'const char [4]'
+  person.ChangeFirstName("asd", 1950);
+                         ^~~~~
+../src/names1.cpp:16:28: note: passing argument to parameter 'year' here
+  void ChangeFirstName(int year, const string& first_name) {
+                           ^
+1 error generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:01:07 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+02:01:07 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+02:01:07 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+02:01:07 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+02:01:16 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+../src/names1.cpp:92:26: error: cannot initialize a parameter of type 'int' with an lvalue of type 'const char [4]'
+  person.ChangeFirstName("asd", 1950);
+                         ^~~~~
+../src/names1.cpp:16:28: note: passing argument to parameter 'year' here
+  void ChangeFirstName(int year, const string& first_name) {
+                           ^
+1 error generated.
+make: *** [src/names1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:01:16 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+02:01:16 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+02:01:17 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+02:01:17 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+02:01:59 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+02:01:59 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+02:02:00 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+02:02:00 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+02:02:00 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+02:02:04 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+02:03:50 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+02:03:51 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+02:03:51 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+02:03:52 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+02:03:52 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+02:03:53 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+02:04:03 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+02:04:03 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+02:04:04 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+02:04:04 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+02:04:04 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+02:04:35 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+02:05:02 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+02:05:03 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+02:05:03 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+02:05:03 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+02:05:03 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+02:05:09 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+02:12:16 **** Build of configuration Debug for project incognizable ****
+make all 
+Building file: ../src/incognizable.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/incognizable.d" -MT"src/incognizable.o" -o "src/incognizable.o" "../src/incognizable.cpp"
+../src/incognizable.cpp:11:14: error: implicit instantiation of undefined template 'std::__1::vector<int, std::__1::allocator<int> >'
+        vector<int> _v;
+                    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iosfwd:200:28: note: template is declared here
+class _LIBCPP_TEMPLATE_VIS vector;
+                           ^
+../src/incognizable.cpp:7:27: error: implicit instantiation of undefined template 'std::__1::vector<int, std::__1::allocator<int> >'
+        Incognizable(vector<int> v) {
+                                 ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iosfwd:200:28: note: template is declared here
+class _LIBCPP_TEMPLATE_VIS vector;
+                           ^
+../src/incognizable.cpp:15:17: error: non-aggregate type 'Incognizable' cannot be initialized with an initializer list
+          Incognizable b = {};
+                       ^   ~~
+../src/incognizable.cpp:16:17: error: non-aggregate type 'Incognizable' cannot be initialized with an initializer list
+          Incognizable c = {0};
+                       ^   ~~~
+../src/incognizable.cpp:17:17: error: non-aggregate type 'Incognizable' cannot be initialized with an initializer list
+          Incognizable d = {0, 1};
+                       ^   ~~~~~~
+5 errors generated.
+make: *** [src/incognizable.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:12:16 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+Building file: ../src/names1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/names1.d" -MT"src/names1.o" -o "src/names1.o" "../src/names1.cpp"
+Finished building: ../src/names1.cpp
+ 
+Building target: names1
+Invoking: MacOS X C++ Linker
+g++  -o "names1"  ./src/names1.o   
+Finished building target: names1
+ 
+02:12:18 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+02:12:18 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+02:12:18 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+02:12:18 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+02:12:33 **** Incremental Build of configuration Debug for project incognizable ****
+make all 
+Building file: ../src/incognizable.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/incognizable.d" -MT"src/incognizable.o" -o "src/incognizable.o" "../src/incognizable.cpp"
+../src/incognizable.cpp:16:17: error: non-aggregate type 'Incognizable' cannot be initialized with an initializer list
+          Incognizable b = {};
+                       ^   ~~
+../src/incognizable.cpp:17:17: error: non-aggregate type 'Incognizable' cannot be initialized with an initializer list
+          Incognizable c = {0};
+                       ^   ~~~
+../src/incognizable.cpp:18:17: error: non-aggregate type 'Incognizable' cannot be initialized with an initializer list
+          Incognizable d = {0, 1};
+                       ^   ~~~~~~
+3 errors generated.
+make: *** [src/incognizable.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:12:33 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+02:12:33 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+02:12:34 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+02:12:34 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+02:12:34 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+02:13:09 **** Incremental Build of configuration Debug for project incognizable ****
+make all 
+Building file: ../src/incognizable.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/incognizable.d" -MT"src/incognizable.o" -o "src/incognizable.o" "../src/incognizable.cpp"
+Finished building: ../src/incognizable.cpp
+ 
+Building target: incognizable
+Invoking: MacOS X C++ Linker
+g++  -o "incognizable"  ./src/incognizable.o   
+Finished building target: incognizable
+ 
+02:13:09 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+02:13:10 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+02:13:10 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+02:13:10 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+02:13:10 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+02:15:33 **** Incremental Build of configuration Debug for project incognizable ****
+make all 
+Building file: ../src/incognizable.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/incognizable.d" -MT"src/incognizable.o" -o "src/incognizable.o" "../src/incognizable.cpp"
+Finished building: ../src/incognizable.cpp
+ 
+Building target: incognizable
+Invoking: MacOS X C++ Linker
+g++  -o "incognizable"  ./src/incognizable.o   
+Finished building target: incognizable
+ 
+02:15:34 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+02:15:34 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+02:15:34 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+02:15:35 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+02:15:35 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+02:18:09 **** Incremental Build of configuration Debug for project incognizable ****
+make all 
+Building file: ../src/incognizable.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/incognizable.d" -MT"src/incognizable.o" -o "src/incognizable.o" "../src/incognizable.cpp"
+../src/incognizable.cpp:6:8: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int x = 0;
+              ^
+../src/incognizable.cpp:7:8: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int y = 0;
+              ^
+2 warnings generated.
+Finished building: ../src/incognizable.cpp
+ 
+Building target: incognizable
+Invoking: MacOS X C++ Linker
+g++  -o "incognizable"  ./src/incognizable.o   
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [incognizable] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:18:10 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+02:18:10 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+02:18:10 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+02:18:11 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+02:18:11 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+02:18:48 **** Incremental Build of configuration Debug for project incognizable ****
+make all 
+Building file: ../src/incognizable.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/incognizable.d" -MT"src/incognizable.o" -o "src/incognizable.o" "../src/incognizable.cpp"
+../src/incognizable.cpp:13:15: warning: unused variable 'c' [-Wunused-variable]
+        Incognizable c = {0};
+                     ^
+../src/incognizable.cpp:11:15: warning: unused variable 'a' [-Wunused-variable]
+        Incognizable a;
+                     ^
+../src/incognizable.cpp:14:15: warning: unused variable 'd' [-Wunused-variable]
+        Incognizable d = {0, 1};
+                     ^
+../src/incognizable.cpp:12:15: warning: unused variable 'b' [-Wunused-variable]
+        Incognizable b = {};
+                     ^
+4 warnings generated.
+Finished building: ../src/incognizable.cpp
+ 
+Building target: incognizable
+Invoking: MacOS X C++ Linker
+g++  -o "incognizable"  ./src/incognizable.o   
+Finished building target: incognizable
+ 
+02:18:49 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+02:18:49 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+02:18:49 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+02:18:49 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+02:18:49 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+02:19:03 **** Incremental Build of configuration Debug for project incognizable ****
+make all 
+Building file: ../src/incognizable.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/incognizable.d" -MT"src/incognizable.o" -o "src/incognizable.o" "../src/incognizable.cpp"
+../src/incognizable.cpp:6:8: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int x = 1;
+              ^
+../src/incognizable.cpp:7:8: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int y = 1;
+              ^
+../src/incognizable.cpp:12:15: error: non-aggregate type 'Incognizable' cannot be initialized with an initializer list
+        Incognizable b = {};
+                     ^   ~~
+../src/incognizable.cpp:13:15: error: non-aggregate type 'Incognizable' cannot be initialized with an initializer list
+        Incognizable c = {0};
+                     ^   ~~~
+../src/incognizable.cpp:14:15: error: non-aggregate type 'Incognizable' cannot be initialized with an initializer list
+        Incognizable d = {0, 1};
+                     ^   ~~~~~~
+2 warnings and 3 errors generated.
+make: *** [src/incognizable.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:19:03 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+02:19:03 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+02:19:03 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+02:19:04 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+02:19:04 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+02:19:11 **** Incremental Build of configuration Debug for project incognizable ****
+make all 
+Building file: ../src/incognizable.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/incognizable.d" -MT"src/incognizable.o" -o "src/incognizable.o" "../src/incognizable.cpp"
+../src/incognizable.cpp:13:15: warning: unused variable 'c' [-Wunused-variable]
+        Incognizable c = {0};
+                     ^
+../src/incognizable.cpp:11:15: warning: unused variable 'a' [-Wunused-variable]
+        Incognizable a;
+                     ^
+../src/incognizable.cpp:14:15: warning: unused variable 'd' [-Wunused-variable]
+        Incognizable d = {0, 1};
+                     ^
+../src/incognizable.cpp:12:15: warning: unused variable 'b' [-Wunused-variable]
+        Incognizable b = {};
+                     ^
+4 warnings generated.
+Finished building: ../src/incognizable.cpp
+ 
+Building target: incognizable
+Invoking: MacOS X C++ Linker
+g++  -o "incognizable"  ./src/incognizable.o   
+Finished building target: incognizable
+ 
+02:19:11 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+02:19:12 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+02:19:12 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+02:19:12 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+02:19:12 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.
+02:48:17 **** Incremental Build of configuration Debug for project incognizable ****
+make all 
+make: Nothing to be done for `all'.
+02:48:17 **** Incremental Build of configuration Debug for project names1 ****
+make all 
+make: Nothing to be done for `all'.
+02:48:18 **** Incremental Build of configuration Debug for project reversible_string ****
+make all 
+make: Nothing to be done for `all'.
+02:48:18 **** Incremental Build of configuration Debug for project sort ****
+make all 
+make: Nothing to be done for `all'.
+02:48:18 **** Incremental Build of configuration Debug for project sorted_strings ****
+make all 
+make: Nothing to be done for `all'.
+02:48:18 **** Build of configuration Debug for project testdestructor ****
+make all 
+Building file: ../src/testdestructor.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testdestructor.d" -MT"src/testdestructor.o" -o "src/testdestructor.o" "../src/testdestructor.cpp"
+../src/testdestructor.cpp:29:12: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+    return {"clear", 10};
+           ^~~~~~~~~~~~~
+../src/testdestructor.cpp:29:12: error: non-aggregate type 'Weather' cannot be initialized with an initializer list
+    return {"clear", 10};
+           ^~~~~~~~~~~~~
+../src/testdestructor.cpp:32:12: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+    return {"cloudy", 10};
+           ^~~~~~~~~~~~~~
+../src/testdestructor.cpp:32:12: error: non-aggregate type 'Weather' cannot be initialized with an initializer list
+    return {"cloudy", 10};
+           ^~~~~~~~~~~~~~
+../src/testdestructor.cpp:37:15: error: implicit instantiation of undefined template 'std::__1::vector<int, std::__1::allocator<int> >'
+  vector<int> days(2, 1);
+              ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iosfwd:200:28: note: template is declared here
+class _LIBCPP_TEMPLATE_VIS vector;
+                           ^
+../src/testdestructor.cpp:38:16: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+  for (int day : days) {
+               ^
+3 warnings and 3 errors generated.
+make: *** [src/testdestructor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:48:19 **** Incremental Build of configuration Debug for project tolower ****
+make all 
+make: Nothing to be done for `all'.

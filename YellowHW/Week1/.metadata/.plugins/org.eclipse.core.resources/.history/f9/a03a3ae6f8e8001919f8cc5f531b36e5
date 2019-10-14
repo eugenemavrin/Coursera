@@ -1,0 +1,30 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+	int n = 0;
+	cin >> n;
+	vector<int> a(n);
+	for (auto &d : a) {
+		cin >> d;
+	}
+	int sum = 0;
+	for (auto &d : a) {
+		sum += d;
+	}
+	int average = sum / static_cast<int> (a.size());
+
+	vector<int> ansv;
+	for (int i = 0; i < static_cast<int> (a.size(); ++i) {
+		if (average < a[i]) {
+			ansv.push_back(i);
+		}
+	}
+	cout << ansv.size() << endl;
+	for (const auto &c : ansv) {
+		cout << c << " ";
+	}
+	return 0;
+}

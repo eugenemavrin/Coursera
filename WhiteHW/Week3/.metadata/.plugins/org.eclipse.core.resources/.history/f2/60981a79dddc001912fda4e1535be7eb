@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+void printVector(const vector<string>& array) {
+	for (const string& i : array) {
+		cout << i << ' ';
+	}
+	cout << endl;
+}
+
+int main() {
+	int n;
+	cin >> n;
+	vector<string> array(n);
+	for (int& i : array) {
+		cin >> i;
+	}
+	sort(begin(array), end(array), [] (string x, string y) { return (x) < (y); });
+	printVector(array);
+	return 0;
+}

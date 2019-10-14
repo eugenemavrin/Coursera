@@ -1,0 +1,54 @@
+23:45:14 **** Build of configuration Debug for project 2ndf ****
+make all 
+Building file: ../src/2ndf.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/2ndf.d" -MT"src/2ndf.o" -o "src/2ndf.o" "../src/2ndf.cpp"
+Finished building: ../src/2ndf.cpp
+ 
+Building target: 2ndf
+Invoking: MacOS X C++ Linker
+g++  -o "2ndf"  ./src/2ndf.o   
+Finished building target: 2ndf
+ 
+23:45:22 **** Incremental Build of configuration Debug for project 2ndf ****
+make all 
+make: Nothing to be done for `all'.
+23:52:38 **** Incremental Build of configuration Debug for project 2ndf ****
+make all 
+Building file: ../src/2ndf.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/2ndf.d" -MT"src/2ndf.o" -o "src/2ndf.o" "../src/2ndf.cpp"
+Finished building: ../src/2ndf.cpp
+ 
+Building target: 2ndf
+Invoking: MacOS X C++ Linker
+g++  -o "2ndf"  ./src/2ndf.o   
+Finished building target: 2ndf
+ 
+23:52:41 **** Incremental Build of configuration Debug for project 2ndf ****
+make all 
+make: Nothing to be done for `all'.
+23:52:52 **** Incremental Build of configuration Debug for project 2ndf ****
+make all 
+make: Nothing to be done for `all'.
+23:52:56 **** Incremental Build of configuration Debug for project 2ndf ****
+make all 
+make: Nothing to be done for `all'.
+23:52:58 **** Incremental Build of configuration Debug for project 2ndf ****
+make all 
+make: Nothing to be done for `all'.
+23:53:07 **** Incremental Build of configuration Debug for project 2ndf ****
+make all 
+make: Nothing to be done for `all'.
+23:53:09 **** Incremental Build of configuration Debug for project 2ndf ****
+make all 
+make: Nothing to be done for `all'.
+23:53:11 **** Incremental Build of configuration Debug for project 2ndf ****
+make all 
+make: Nothing to be done for `all'.
+23:53:37 **** Incremental Build of configuration Debug for project 2ndf ****
+make all 
+make: Nothing to be done for `all'.
+23:53:44 **** Incremental Build of configuration Debug for project 2ndf ****
+make all 
+make: Nothing to be done for `all'.

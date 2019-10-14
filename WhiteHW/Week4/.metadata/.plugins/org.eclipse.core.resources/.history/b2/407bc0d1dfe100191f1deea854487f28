@@ -1,0 +1,10 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main() {
+	ifstream txt("input.txt");
+	if(txt.is_open())
+	return 0;
+}

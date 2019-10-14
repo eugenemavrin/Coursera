@@ -1,0 +1,6 @@
+03:19:13 **** Incremental Build of configuration Debug for project PalindromFilter ****
+make all 
+make: Nothing to be done for `all'.
+
+03:19:13 Build Finished. 0 errors, 0 warnings. (took 252ms)
+

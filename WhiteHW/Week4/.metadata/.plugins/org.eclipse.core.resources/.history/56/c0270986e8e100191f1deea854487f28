@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+struct Student {
+	string first_name;
+	string last_name;
+	unsigned int day;
+	unsigned int month;
+	unsigned int year;
+};
+
+int main() {
+	int n;
+	cin >> n;
+	vector <Student> students(n);
+	for (auto& s : students) {
+		cin >> s.first_name;
+	}
+
+	return 0;
+}

@@ -1,0 +1,43 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	vector<int> dim;
+	dim = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	int month = 0; //January;
+	vector<vector<string>> tasks(dim[month]);
+	while (n > 0) {
+		string s;
+		cin >> s;
+		if (s == "ADD") {
+			int day;
+			cin >> day;
+			--day;
+			string s;
+			cin >> s;
+			tasks[day].push_back(s);
+		}
+		else if (s == "DUMP") {
+			int day;
+			cin >> day;
+			--day;
+			cout << tasks[day].size() << " ";
+			for (auto task : tasks[day]) {
+				cout << task << " ";
+			}
+		}
+		else if (s == "NEXT") {
+			month++;
+			for (int i = dim[month - 1]; i < dim[month]; i++) {
+				//tasks[dim[month - 1]].insert(end(tasks[dim[month - 1]], begin(tasks[i]), end(tasks[i]));
+			}
+		}
+		else cout << "ERROR";
+		n--;
+	}
+	return 0;
+}

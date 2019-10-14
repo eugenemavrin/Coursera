@@ -1,0 +1,15 @@
+05:20:07 **** Incremental Build of configuration Debug for project uartmaster ****
+make all 
+Building file: ../src/uartmaster.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uartmaster.d" -MT"src/uartmaster.o" -o "src/uartmaster.o" "../src/uartmaster.cpp"
+Finished building: ../src/uartmaster.cpp
+ 
+Building target: uartmaster
+Invoking: MacOS X C++ Linker
+g++  -o "uartmaster"  ./src/uartmaster.o   
+Finished building target: uartmaster
+ 
+
+05:20:07 Build Finished. 0 errors, 0 warnings. (took 552ms)
+

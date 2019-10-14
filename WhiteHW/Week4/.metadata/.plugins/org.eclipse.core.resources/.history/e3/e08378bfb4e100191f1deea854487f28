@@ -1,0 +1,59 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class FunctionPart {
+public:
+	FunctionPart(const char& c, const double x) {
+		_operand = c;
+		_x = x;
+	}
+	char Operand() const {
+		return _operand;
+	}
+	double Value() const {
+		return _x;
+	}
+private:
+	char _operand;
+	double _x;
+};
+
+class Function {
+public:
+	Function() {};
+	void AddPart (const char& c, const double x) {
+		_operations.push_back(FunctionPart(c, x));
+	}
+	double Apply(double& y) {
+		for (auto& o : _operations) {
+			if (o.Operand() == '+') {
+				y += o.Value();
+			}
+			else y-= o.Value();
+		}
+		return y;
+	}
+	void Invert() {
+		for (auto & o : _operations) {
+			if (o.Operand() == '+') {
+				o = FunctionPart('-', o.Value());
+			}
+			else o = FunctionPart('+', o.Value());
+		}
+		reverse(_operations.begin(), _operations.end());
+	}
+
+private:
+	vector<FunctionPart> _operations;
+};
+
+
+/*
+ * Compile error: b"/tmp/submissionmhi5tlsx/invert.cpp: In function
+ * 'double ComputeQualityByWeight(const Params&, const Image&, double, WeightFunction)':\
+ * n/tmp/submissionmhi5tlsx/invert.cpp:104:35: error: no matching function for call to
+ * 'Function::Apply(double&) const'\n   return function_ref.Apply(weight);\n                                   ^\ncompilation terminated due to -Wfatal-errors.\n"
+
+ *
+ */

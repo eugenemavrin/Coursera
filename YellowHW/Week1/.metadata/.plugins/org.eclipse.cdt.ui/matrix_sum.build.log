@@ -1,0 +1,6 @@
+16:51:43 **** Incremental Build of configuration Debug for project matrix_sum ****
+make all 
+make: Nothing to be done for `all'.
+
+16:51:43 Build Finished. 0 errors, 0 warnings. (took 153ms)
+

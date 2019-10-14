@@ -1,0 +1,15 @@
+16:59:40 **** Incremental Build of configuration Debug for project element_reference ****
+make all 
+Building file: ../src/element_reference.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/element_reference.d" -MT"src/element_reference.o" -o "src/element_reference.o" "../src/element_reference.cpp"
+Finished building: ../src/element_reference.cpp
+ 
+Building target: element_reference
+Invoking: MacOS X C++ Linker
+g++  -o "element_reference"  ./src/element_reference.o   
+Finished building target: element_reference
+ 
+
+16:59:42 Build Finished. 0 errors, 0 warnings. (took 1s.808ms)
+

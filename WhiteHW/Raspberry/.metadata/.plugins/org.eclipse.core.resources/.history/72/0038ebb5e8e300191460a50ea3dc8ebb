@@ -1,0 +1,36 @@
+#include <iostream>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>     // UNIX standard function definitions
+#include <fcntl.h>      // File control definitions
+#include <termios.h>    // POSIX terminal control definitions
+using namespace std;
+//https://stackoverflow.com/questions/18108932/reading-and-writing-to-serial-port-in-c-on-linux
+int main() {
+	struct termios serial;
+	int USB = open( "/dev/cu.usbserial-14120", O_RDWR| O_NOCTTY | O_NDELAY );
+	if ( USB > 0 ) {
+		serial.c_iflag = 0;
+		serial.c_oflag = 0;
+		serial.c_lflag = 0;
+		serial.c_cflag = 0;
+
+		serial.c_cc[VMIN] = 0;
+		serial.c_cc[VTIME] = 0;
+
+		serial.c_cflag = B9600 | CS8 | CREAD;
+
+		tcsetattr(USB, TCSANOW, &serial);
+		//it works
+		char str[100] = "algo";
+		int wcount = write(USB, str, strlen(str));
+		if(wcount > -1)
+			printf ("\n%d symbols was transmitted successfully", wcount);
+
+
+		close(USB);
+		return 0;
+	}
+
+	return 0;
+}

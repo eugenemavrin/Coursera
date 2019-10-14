@@ -1,0 +1,84 @@
+22:55:17 **** Build of configuration Debug for project SalePrice ****
+make all 
+Building file: ../src/SalePrice.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SalePrice.d" -MT"src/SalePrice.o" -o "src/SalePrice.o" "../src/SalePrice.cpp"
+Finished building: ../src/SalePrice.cpp
+ 
+Building target: SalePrice
+Invoking: MacOS X C++ Linker
+g++  -o "SalePrice"  ./src/SalePrice.o   
+Finished building target: SalePrice
+ 
+22:55:51 **** Incremental Build of configuration Debug for project SalePrice ****
+make all 
+make: Nothing to be done for `all'.
+22:56:08 **** Incremental Build of configuration Debug for project SalePrice ****
+make all 
+Building file: ../src/SalePrice.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SalePrice.d" -MT"src/SalePrice.o" -o "src/SalePrice.o" "../src/SalePrice.cpp"
+Finished building: ../src/SalePrice.cpp
+ 
+Building target: SalePrice
+Invoking: MacOS X C++ Linker
+g++  -o "SalePrice"  ./src/SalePrice.o   
+Finished building target: SalePrice
+ 
+22:56:32 **** Incremental Build of configuration Debug for project SalePrice ****
+make all 
+make: Nothing to be done for `all'.
+22:56:42 **** Incremental Build of configuration Debug for project SalePrice ****
+make all 
+make: Nothing to be done for `all'.
+22:57:37 **** Incremental Build of configuration Debug for project SalePrice ****
+make all 
+Building file: ../src/SalePrice.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SalePrice.d" -MT"src/SalePrice.o" -o "src/SalePrice.o" "../src/SalePrice.cpp"
+Finished building: ../src/SalePrice.cpp
+ 
+Building target: SalePrice
+Invoking: MacOS X C++ Linker
+g++  -o "SalePrice"  ./src/SalePrice.o   
+Finished building target: SalePrice
+ 
+22:57:56 **** Incremental Build of configuration Debug for project SalePrice ****
+make all 
+make: Nothing to be done for `all'.
+22:57:59 **** Incremental Build of configuration Debug for project SalePrice ****
+make all 
+make: Nothing to be done for `all'.
+22:58:44 **** Incremental Build of configuration Debug for project SalePrice ****
+make all 
+Building file: ../src/SalePrice.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SalePrice.d" -MT"src/SalePrice.o" -o "src/SalePrice.o" "../src/SalePrice.cpp"
+Finished building: ../src/SalePrice.cpp
+ 
+Building target: SalePrice
+Invoking: MacOS X C++ Linker
+g++  -o "SalePrice"  ./src/SalePrice.o   
+Finished building target: SalePrice
+ 
+22:58:51 **** Incremental Build of configuration Debug for project SalePrice ****
+make all 
+make: Nothing to be done for `all'.
+22:58:59 **** Incremental Build of configuration Debug for project SalePrice ****
+make all 
+make: Nothing to be done for `all'.
+22:59:08 **** Incremental Build of configuration Debug for project SalePrice ****
+make all 
+make: Nothing to be done for `all'.
+22:59:44 **** Incremental Build of configuration Debug for project SalePrice ****
+make all 
+Building file: ../src/SalePrice.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SalePrice.d" -MT"src/SalePrice.o" -o "src/SalePrice.o" "../src/SalePrice.cpp"
+Finished building: ../src/SalePrice.cpp
+ 
+Building target: SalePrice
+Invoking: MacOS X C++ Linker
+g++  -o "SalePrice"  ./src/SalePrice.o   
+Finished building target: SalePrice
+ 

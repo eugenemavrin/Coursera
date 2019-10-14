@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int n = 0;
+	cin >> n;
+	vector<int> a(5);
+	for (auto &d : a) {
+		cin >> d;
+	}
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

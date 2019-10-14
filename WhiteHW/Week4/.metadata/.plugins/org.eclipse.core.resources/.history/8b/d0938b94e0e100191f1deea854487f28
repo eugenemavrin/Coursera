@@ -1,0 +1,16 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main() {
+	ifstream text("input.txt");
+	string s;
+	ofstream otext("output.txt");
+	if(text.is_open()) {
+		while (getline(text, s)) {
+			otext << s << endl;
+		}
+	}
+	return 0;
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	vector<int> dim = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	int month = 0; //January;
+	vector<string> tasks;
+	while (n > 0) {
+		cout << n;
+		n--;
+	}
+	return 0;
+}

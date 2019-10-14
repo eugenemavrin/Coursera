@@ -1,0 +1,92 @@
+03:17:47 **** Incremental Build of configuration Debug for project rpiuart ****
+make all 
+Building file: ../src/rpiuart.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rpiuart.d" -MT"src/rpiuart.o" -o "src/rpiuart.o" "../src/rpiuart.cpp"
+../src/rpiuart.cpp:33:16: error: invalid operands to binary expression ('std::__1::string' (aka 'basic_string<char, char_traits<char>, allocator<char> >') and 'int')
+                    while (q > 0) {
+                           ~ ^ ~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/utility:602:1: note: candidate template ignored: could not match 'pair' against 'basic_string'
+operator> (const pair<_T1,_T2>& __x, const pair<_T1,_T2>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:718:1: note: candidate template ignored: could not match 'reverse_iterator' against 'basic_string'
+operator>(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1159:1: note: candidate template ignored: could not match 'move_iterator' against 'basic_string'
+operator>(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1535:1: note: candidate template ignored: could not match '__wrap_iter' against 'basic_string'
+operator>(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT_DEBUG
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1567:1: note: candidate template ignored: could not match '__wrap_iter' against 'basic_string'
+operator>(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter1>& __y) _NOEXCEPT_DEBUG
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:2981:1: note: candidate template ignored: could not match 'unique_ptr' against 'basic_string'
+operator> (const unique_ptr<_T1, _D1>& __x, const unique_ptr<_T2, _D2>& __y) {return __y < __x;}
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:3046:1: note: candidate template ignored: could not match 'unique_ptr' against 'basic_string'
+operator>(const unique_ptr<_T1, _D1>& __x, nullptr_t)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:3054:1: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'int'
+operator>(nullptr_t, const unique_ptr<_T1, _D1>& __x)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:4822:1: note: candidate template ignored: could not match 'shared_ptr' against 'basic_string'
+operator>(const shared_ptr<_Tp>& __x, const shared_ptr<_Up>& __y) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:4894:1: note: candidate template ignored: could not match 'shared_ptr' against 'basic_string'
+operator>(const shared_ptr<_Tp>& __x, nullptr_t) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/memory:4902:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'int'
+operator>(nullptr_t, const shared_ptr<_Tp>& __x) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:698:6: note: candidate template ignored: could not match 'basic_string_view' against 'basic_string'
+bool operator> (basic_string_view<_CharT, _Traits> __lhs, basic_string_view<_CharT, _Traits> __rhs) _NOEXCEPT
+     ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:705:6: note: candidate template ignored: could not match 'basic_string_view' against 'basic_string'
+bool operator>(basic_string_view<_CharT, _Traits> __lhs,
+     ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:713:6: note: candidate template ignored: could not match 'basic_string_view<type-parameter-0-0, type-parameter-0-1>' against 'int'
+bool operator>(typename common_type<basic_string_view<_CharT, _Traits> >::type __lhs, 
+     ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3907:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'int'
+operator> (const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3916:1: note: candidate template ignored: could not match 'const _CharT *' against 'int'
+operator> (const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:3925:1: note: candidate template ignored: could not match 'const _CharT *' against 'std::__1::string' (aka 'basic_string<char, char_traits<char>, allocator<char> >')
+operator> (const _CharT* __lhs,
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:3365:1: note: candidate template ignored: could not match 'vector' against 'basic_string'
+operator> (const vector<_Tp, _Allocator>& __x, const vector<_Tp, _Allocator>& __y)
+^
+../src/rpiuart.cpp:34:9: error: cannot decrement value of type 'std::__1::string' (aka 'basic_string<char, char_traits<char>, allocator<char> >')
+                        q--;
+                        ~^
+../src/rpiuart.cpp:35:33: error: use of undeclared identifier 'str'
+                         printf("Sending: %s\n", str);
+                                                 ^
+../src/rpiuart.cpp:37:35: error: use of undeclared identifier 'str'
+                            int wcount = write(fd, str, strlen(str));
+                                                   ^
+../src/rpiuart.cpp:37:47: error: use of undeclared identifier 'str'
+                            int wcount = write(fd, str, strlen(str));
+                                                               ^
+../src/rpiuart.cpp:42:49: error: use of undeclared identifier 'buffer'
+                            int rcount = read(fd, buffer, sizeof(buffer));
+                                                                 ^
+../src/rpiuart.cpp:42:34: error: use of undeclared identifier 'buffer'
+                            int rcount = read(fd, buffer, sizeof(buffer));
+                                                  ^
+../src/rpiuart.cpp:43:12: error: expected expression
+                            else {
+                            ^
+../src/rpiuart.cpp:49:37: error: use of undeclared identifier 'buffer'
+                            printf("Received: %s\n", buffer);
+                                                     ^
+9 errors generated.
+make: *** [src/rpiuart.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+03:17:48 Build Failed. 10 errors, 0 warnings. (took 897ms)
+

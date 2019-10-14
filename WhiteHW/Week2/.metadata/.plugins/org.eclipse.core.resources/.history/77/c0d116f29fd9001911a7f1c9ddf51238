@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int fact(int n) {
+	if (n > 1)
+		return n * fact(n - 1);
+	return 1;
+}
+
+int main() {
+	int n;
+	cin >> n;
+	cout << fact(n);
+	return 0;
+}
+/*
+Compile error: b'/tmp/submissionzfbtami9/factorial.cpp:28:1:
+fatal error: static_assert failed due to requirement \'std::is_convertible_v<belts::detected_t<Member0, int>, int>\' "Function int Factorial(int) not found in your submission"\nCHECK_FUNCTION(Factorial, int, int);\n^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\ninclude/detector.h:257:3: note: expanded from macro \'CHECK_FUNCTION\'\n  __CHECK_FUNCTION_IMPL(__COUNTER__, function_name, return_type, ##__VA_ARGS__)\n  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\ninclude/detector.h:120:3: note: expanded from macro \'__CHECK_FUNCTION_IMPL\'\n  __CHECK_FUNCTION_IMPL_2(suffix, function_name, return_type, ##__VA_ARGS__)\n  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\ninclude/detector.h:96:3: note: expanded from macro \'__CHECK_FUNCTION_IMPL_2\'\n  static_assert(                                                                            \\\n  ^\n1 error generated.\n'
+
+*/

@@ -1,0 +1,4 @@
+TracepointActionManager.actionData=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<tracepointActionData/>\n
+defaultGdbCommand=/usr/local/Cellar/gdb/8.3/bin/gdb
+defaultGdbInit=~/.gdbinit
+eclipse.preferences.version=1

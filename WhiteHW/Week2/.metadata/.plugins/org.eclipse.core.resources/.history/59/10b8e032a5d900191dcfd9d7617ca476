@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+bool IsPalindrom(string s) {
+	string revs, tail;
+	for (char c : s) {
+		revs = c + tail;
+		tail = revs;
+	}
+
+	return s == revs;
+}
+
+vector<string> PalindromFilter(vector<string> words, int minLength) {
+	vector<string> res;
+	for (string word : words) {
+		if(IsPalindrom(word) && word.size() >= minLength)
+			res.push_back(word);
+	}
+	return res;
+}
+
+int main() {
+	int a;
+	vector<string> words;
+	int minLength = 4;
+	vector<string> www;
+	www = PalindromFilter(words, minLength); // @suppress("Invalid arguments")
+	for (auto w : www) {
+		cout << w << endl;
+	}
+	return 0;
+}

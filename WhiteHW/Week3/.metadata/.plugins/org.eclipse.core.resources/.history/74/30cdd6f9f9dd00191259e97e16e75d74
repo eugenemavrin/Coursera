@@ -1,0 +1,97 @@
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <map>
+
+using namespace std;
+
+class Person {
+public:
+  void ChangeFirstName(int year, const string& first_name) {
+	  story_first_name[year] = first_name;
+  }
+
+  void ChangeLastName(int year, const string& last_name) {
+	  story_last_name[year] = last_name;
+  }
+
+  string GetFullName(int year) {
+	  return FormattedReturn(GetFloorElement(year, story_first_name), GetFloorElement(year, story_last_name));
+
+  }
+  string GetFullNameWithHistory(int year) {
+	  return FormattedReturn(GetFloorElementWithHistory(year, story_first_name), GetFloorElementWithHistory(year, story_last_name));
+    }
+
+private:
+  map<int, string> story_first_name;
+  map<int, string> story_last_name;
+
+  string GetFloorElement (int n, map<int, string> array) {
+	  string s = "";
+	  for (auto & elem : array) {
+		  if (elem.first <= n) {
+			  s = elem.second;
+		  }
+	  }
+	  return s;
+  }
+  string GetFloorElementWithHistory (int n, map<int, string> array) {
+	  string s = "";
+	  vector <string> story;
+	  for (auto & elem : array) {
+		  if (elem.first <= n) {
+			  story.push_back(s);
+			  s = elem.second;
+		  }
+	  }
+	  s = s + " (";
+	  bool flag = false;
+	  reverse(story.begin(), story.end());
+	  for (const auto& l : story) {
+		  if (l != "" && count(story.begin(), story.end(), l) == 1) {
+			  s = s + l + ", ";
+			  flag = true;
+		  }
+	  }
+	  if (flag) {
+		  s.erase(s.size() - 1);
+		  s += ")";
+	  }
+	  else s.erase(s.size() - 2);
+	  return s;
+  }
+  string FormattedReturn(string first_name, string last_name) {
+	  if (first_name == "" && last_name == "") {
+		  return "Incognito";
+	  }
+	  else if (first_name == "") {
+		  return last_name + " with unknown first name";
+	  }
+	  else if (last_name == "") {
+		  return first_name + " with unknown last name";
+	  }
+	  else {
+		  return first_name + " " + last_name;
+	  }
+  }
+
+};
+
+int main() {
+  Person person;
+
+  person.ChangeFirstName(1900, "Eugene");
+  person.ChangeFirstName(1899, "Eugen");
+  person.ChangeLastName(1900, "Sokoov");
+  person.ChangeLastName(1910, "Sokolov");
+  person.ChangeFirstName(1920, "Evgeny");
+  person.ChangeLastName(1930, "Sokolov");
+  cout << person.GetFullNameWithHistory(1940) << endl;
+
+  return 0;
+}
+
+

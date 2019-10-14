@@ -1,0 +1,14 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+	cout << "array length = ";
+	int l;
+	cin >> l;
+	vector <int> array(l);
+	for (int d : array) {
+
+	}
+	return 0;
+}

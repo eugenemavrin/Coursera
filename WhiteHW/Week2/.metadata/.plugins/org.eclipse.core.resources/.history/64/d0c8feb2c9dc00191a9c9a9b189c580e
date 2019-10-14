@@ -1,0 +1,44 @@
+#include <iostream>
+#include <set>
+#include <string>
+using namespace std;
+
+int main() {
+	set<set<string>> syn_voc;
+	int Q;
+	cin >> Q;
+	while (Q > 0) {
+		string queue;
+		cin >> queue;
+		if (queue == "ADD") {
+			string s1, s2;
+			cin >> s1 >> s2;
+			set<string> pair;
+			pair.insert(s1);
+			pair.insert(s2);
+			syn_voc.insert(pair);
+		}
+		else if (queue == "COUNT") {
+			string s;
+			cin >> s;
+			int count = 0;
+			for (const auto& pair: syn_voc&) {
+				count += pair.count(s);
+			}
+			cout << count << endl;
+		}
+		else if (queue == "CHECK") {
+			string s1, s2;
+			cin >> s1 >> s2;
+			set<string> pair;
+			pair.insert(s1);
+			pair.insert(s2);
+			if(syn_voc.count(pair) > 0) {
+				cout << "YES" << endl;
+			}
+			else cout << "NO" << endl;
+		}
+		Q--;
+	}
+	return 0;
+}

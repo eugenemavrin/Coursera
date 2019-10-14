@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+
+int myreverse(int n) {
+	int res;
+	while (n > 0) {
+		res = (res + n % 10) * 10;
+		n /= 10;
+	}
+	return res / 10;
+}
+
+bool isPalindrome(int a) {
+	return a == myreverse(a);
+}
+
+int main() {
+	int n = 1488;
+	cout << myreverse(n);
+
+	return 0;
+}

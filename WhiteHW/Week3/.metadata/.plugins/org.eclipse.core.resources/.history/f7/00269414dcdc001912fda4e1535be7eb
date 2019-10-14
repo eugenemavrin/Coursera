@@ -1,0 +1,21 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void printVector(const vector<int>& array) {
+	for (const int& i : array) {
+		cout << i << ' ';
+	}
+	cout << endl;
+}
+
+int main() {
+	int n;
+	cin >> n;
+	vector<int> array(n);
+	for (int& i : array) {
+		cin >> i;
+	}
+	printVector(array);
+	return 0;
+}

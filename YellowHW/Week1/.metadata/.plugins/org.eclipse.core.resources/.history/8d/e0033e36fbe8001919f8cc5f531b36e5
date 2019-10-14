@@ -1,0 +1,25 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+
+struct BlockSize {
+	int W;
+	int D;
+	int H;
+};
+
+int main() {
+	int n, ro;
+	vector<BlockSize> blocks(n);
+	for (auto &b : blocks) {
+		cin >> b.W >> b.D >> b.H;
+	}
+	uint m = 0;
+	for (auto &b : blocks) {
+		m += b.W * b.D * b.H * ro;
+	}
+	cout << m << endl;
+	return 0;
+}

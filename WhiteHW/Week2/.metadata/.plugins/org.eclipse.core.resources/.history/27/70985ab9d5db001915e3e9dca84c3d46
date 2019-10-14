@@ -1,0 +1,21 @@
+#include <iostream>
+#include <map>
+#include <string>
+using namespace std;
+
+int main() {
+	map<string, string> countries;
+	int Q;
+	cin >> Q;
+	while (Q > 0) {
+		string query;
+		cin >> query;
+		if (query == "CHANGE_CAPITAL") {
+			string country, new_capital;
+			if()
+		}
+		Q--;
+	}
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

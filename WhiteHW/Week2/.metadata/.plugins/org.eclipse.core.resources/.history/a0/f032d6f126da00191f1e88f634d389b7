@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n = 5, x;
+	//cout << "n = ";
+	//cin >> n;
+	x = (((n << 4) + (n << 2)) >> 1) << 1; // умножение на 10
+	cout << x;
+	return 0;
+}

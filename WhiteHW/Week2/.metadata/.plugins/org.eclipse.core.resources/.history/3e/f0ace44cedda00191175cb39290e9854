@@ -1,0 +1,38 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+void printVector (const vector<bool>& line) {
+	for (bool state : line)
+		cout << state << endl;
+}
+
+int main() {
+	int n;
+	cin >> n;
+	vector<bool> line(0, 0);
+	while (n > 0) {
+		string s;
+		cin >> s;
+		if (s == "WORRY") {
+
+		}
+		else if (s == "QUIET") {
+
+		}
+		else if (s == "COME") {
+			int count;
+			cin >> count;
+			line.resize(count + line.size());
+			cout << "line size = " << line.size() << endl;
+			printVector(line);
+		}
+		else if (s == "WORRY_COUNT") {
+
+		}
+		n--;
+	}
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

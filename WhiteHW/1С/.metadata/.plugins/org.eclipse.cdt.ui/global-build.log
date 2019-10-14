@@ -1,0 +1,3062 @@
+11:53:41 **** Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+11:54:10 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:8:12: error: expected member name or ';' after declaration specifiers
+        Solution ({});
+        ~~~~~~~~  ^
+../src/first.cpp:8:12: error: expected ')'
+../src/first.cpp:8:11: note: to match this '('
+        Solution ({});
+                 ^
+2 errors generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:56:17 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:02:36 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:13:18: error: binding value of type 'const basic_string<...>' to reference to type 'basic_string<...>' drops 'const' qualifier
+                banned = parse(p);
+                               ^
+../src/first.cpp:26:32: note: passing argument to parameter 's' here
+        vector <string> parse(string& s) {
+                                      ^
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:03:05 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:15:49 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:36:18: error: non-aggregate type 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >') cannot be initialized with an initializer list
+        vector <string> banned = {"hit"};
+                        ^        ~~~~~~~
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:16:35 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:17:53 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:38:11: error: no matching constructor for initialization of 'Solution'
+        Solution data(paragraph, banned);
+                 ^    ~~~~~~~~~~~~~~~~~
+../src/first.cpp:10:2: note: candidate constructor not viable: no known conversion from 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >') to 'const std::__1::string' (aka 'const basic_string<char, char_traits<char>, allocator<char> >') for 2nd argument
+        Solution(const string& p, const string& b) {
+        ^
+../src/first.cpp:6:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+class Solution {
+      ^
+../src/first.cpp:6:7: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 2 were provided
+../src/first.cpp:8:2: note: candidate constructor not viable: requires 0 arguments, but 2 were provided
+        Solution() {}
+        ^
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:18:37 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:39:11: error: no matching constructor for initialization of 'Solution'
+        Solution data(paragraph, banned);
+                 ^    ~~~~~~~~~~~~~~~~~
+../src/first.cpp:10:2: note: candidate constructor not viable: no known conversion from 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >') to 'const std::__1::string' (aka 'const basic_string<char, char_traits<char>, allocator<char> >') for 2nd argument
+        Solution(const string& p, const string& b) {
+        ^
+../src/first.cpp:6:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+class Solution {
+      ^
+../src/first.cpp:6:7: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 2 were provided
+../src/first.cpp:8:2: note: candidate constructor not viable: requires 0 arguments, but 2 were provided
+        Solution() {}
+        ^
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:18:50 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:39:11: error: no matching constructor for initialization of 'Solution'
+        Solution data(paragraph, banned);
+                 ^    ~~~~~~~~~~~~~~~~~
+../src/first.cpp:10:2: note: candidate constructor not viable: no known conversion from 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >') to 'const std::__1::string' (aka 'const basic_string<char, char_traits<char>, allocator<char> >') for 2nd argument
+        Solution(const string& p, const string& b) {
+        ^
+../src/first.cpp:6:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+class Solution {
+      ^
+../src/first.cpp:6:7: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 2 were provided
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:19:13 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:39:11: error: no matching constructor for initialization of 'Solution'
+        Solution data(paragraph, banned);
+                 ^    ~~~~~~~~~~~~~~~~~
+../src/first.cpp:10:2: note: candidate constructor not viable: no known conversion from 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >') to 'std::__1::string &' (aka 'basic_string<char, char_traits<char>, allocator<char> > &') for 2nd argument
+        Solution(string& p, string& b) {
+        ^
+../src/first.cpp:6:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+class Solution {
+      ^
+../src/first.cpp:6:7: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 2 were provided
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:19:30 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:39:11: error: no matching constructor for initialization of 'Solution'
+        Solution data(paragraph, banned);
+                 ^    ~~~~~~~~~~~~~~~~~
+../src/first.cpp:10:2: note: candidate constructor not viable: no known conversion from 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >') to 'std::__1::string &' (aka 'basic_string<char, char_traits<char>, allocator<char> > &') for 2nd argument
+        Solution(string& p, string& b) {
+        ^
+../src/first.cpp:6:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+class Solution {
+      ^
+../src/first.cpp:6:7: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 2 were provided
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:20:58 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:30:33 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+12:31:35 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:30:14: error: binding value of type 'const char' to reference to type 'char' drops 'const' qualifier
+                for (char& c : s)
+                           ^ ~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:905:20: note: selected 'begin' function with iterator type 'std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::const_iterator' (aka '__wrap_iter<const char *>')
+    const_iterator begin() const _NOEXCEPT
+                   ^
+../src/first.cpp:32:15: error: use of undeclared identifier 'c'
+                        if(isalpha(c)) {
+                                   ^
+2 errors generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:31:46 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:32:15: error: use of undeclared identifier 'c'
+                        if(isalpha(c)) {
+                                   ^
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:31:51 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:30:14: error: binding value of type 'const char' to reference to type 'char' drops 'const' qualifier
+                for (char& c : s)
+                           ^ ~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string:905:20: note: selected 'begin' function with iterator type 'std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::const_iterator' (aka '__wrap_iter<const char *>')
+    const_iterator begin() const _NOEXCEPT
+                   ^
+../src/first.cpp:32:15: error: use of undeclared identifier 'c'
+                        if(isalpha(c)) {
+                                   ^
+2 errors generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:32:01 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:32:15: error: use of undeclared identifier 'c'
+                        if(isalpha(c)) {
+                                   ^
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:32:10 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:4:10: fatal error: 'ctype' file not found
+#include <ctype>
+         ^~~~~~~
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:32:25 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:32:15: error: use of undeclared identifier 'c'
+                        if(isalpha(c)) {
+                                   ^
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:32:37 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:32:15: error: use of undeclared identifier 'c'
+                        if(isalpha(c)) {
+                                   ^
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:32:47 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:32:15: error: use of undeclared identifier 'c'
+                        if(isalpha(c) > 0) {
+                                   ^
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:33:12 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:33:17 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:40:00 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:18:13: error: no viable conversion from returned value of type 'const char [2]' to function return type 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >')
+        return "0";
+               ^~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:551:5: note: candidate constructor not viable: no known conversion from 'const char [2]' to 'const std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > &' for 1st argument
+    vector(const vector& __x);
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:558:5: note: candidate constructor not viable: no known conversion from 'const char [2]' to 'initializer_list<std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >::value_type>' (aka 'initializer_list<std::__1::basic_string<char> >') for 1st argument
+    vector(initializer_list<value_type> __il);
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:564:5: note: candidate constructor not viable: no known conversion from 'const char [2]' to 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > &&' for 1st argument
+    vector(vector&& __x)
+    ^
+../src/first.cpp:56:7: error: reference to non-static member function must be called; did you mean to call it with no arguments?
+        data.PrintParsedParagraph;
+        ~~~~~^~~~~~~~~~~~~~~~~~~~
+                                 ()
+2 errors generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:40:14 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:58:7: error: reference to non-static member function must be called; did you mean to call it with no arguments?
+        data.PrintParsedParagraph;
+        ~~~~~^~~~~~~~~~~~~~~~~~~~
+                                 ()
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:40:28 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:40:37 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+12:41:04 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:41:35 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:42:20 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:19:13: error: no viable conversion from returned value of type 'int' to function return type 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >')
+        return 0;
+               ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:551:5: note: candidate constructor not viable: no known conversion from 'int' to 'const std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > &' for 1st argument
+    vector(const vector& __x);
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:558:5: note: candidate constructor not viable: no known conversion from 'int' to 'initializer_list<std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >::value_type>' (aka 'initializer_list<std::__1::basic_string<char> >') for 1st argument
+    vector(initializer_list<value_type> __il);
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:564:5: note: candidate constructor not viable: no known conversion from 'int' to 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > &&' for 1st argument
+    vector(vector&& __x)
+    ^
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:47:12 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:50:08 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:50:22 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:50:52 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:51:06 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:51:48 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:47:12: error: reference to non-static member function must be called; did you mean to call it with no arguments?
+                if (temp.size > 0) {
+                    ~~~~~^~~~
+                             ()
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:51:54 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:52:02 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:54:00 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:16:10: error: unknown type name 'sting'; did you mean 'string'?
+                vector<sting> = answer;
+                       ^~~~~
+                       string
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iosfwd:194:65: note: 'string' declared here
+typedef basic_string<char, char_traits<char>, allocator<char> > string;
+                                                                ^
+../src/first.cpp:16:17: error: expected unqualified-id
+                vector<sting> = answer;
+                              ^
+../src/first.cpp:17:13: error: no viable conversion from returned value of type 'int' to function return type 'vector<std::__1::string>' (aka 'vector<basic_string<char, char_traits<char>, allocator<char> > >')
+        return 0;
+               ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:551:5: note: candidate constructor not viable: no known conversion from 'int' to 'const std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > &' for 1st argument
+    vector(const vector& __x);
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:558:5: note: candidate constructor not viable: no known conversion from 'int' to 'initializer_list<std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >::value_type>' (aka 'initializer_list<std::__1::basic_string<char> >') for 1st argument
+    vector(initializer_list<value_type> __il);
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:564:5: note: candidate constructor not viable: no known conversion from 'int' to 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > &&' for 1st argument
+    vector(vector&& __x)
+    ^
+3 errors generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:54:14 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:16:10: error: unknown type name 'sting'; did you mean 'string'?
+                vector<sting> = answer;
+                       ^~~~~
+                       string
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iosfwd:194:65: note: 'string' declared here
+typedef basic_string<char, char_traits<char>, allocator<char> > string;
+                                                                ^
+../src/first.cpp:16:17: error: expected unqualified-id
+                vector<sting> = answer;
+                              ^
+../src/first.cpp:17:13: error: use of undeclared identifier 'answer'
+        return answer;
+               ^
+3 errors generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:54:22 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:16:10: error: unknown type name 'sting'; did you mean 'string'?
+                vector<sting> answer;
+                       ^~~~~
+                       string
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iosfwd:194:65: note: 'string' declared here
+typedef basic_string<char, char_traits<char>, allocator<char> > string;
+                                                                ^
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:54:35 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+12:54:38 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+12:56:28 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:00:46 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:17:03 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:61:13: error: calling a private constructor of class 'std::__1::__wrap_iter<const std::__1::basic_string<char> *>'
+                                v.erase(&s);
+                                        ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1422:60: note: declared private here
+    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG __wrap_iter(iterator_type __x) _NOEXCEPT_DEBUG : __i(__x) {}
+                                                           ^
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:17:13 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:61:7: error: no matching member function for call to 'erase'
+                                v.erase(s);
+                                ~~^~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:759:40: note: candidate function not viable: no known conversion from 'std::__1::basic_string<char>' to 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >::const_iterator' (aka '__wrap_iter<const std::__1::basic_string<char> *>') for 1st argument
+    _LIBCPP_INLINE_VISIBILITY iterator erase(const_iterator __position);
+                                       ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:760:14: note: candidate function not viable: requires 2 arguments, but 1 was provided
+    iterator erase(const_iterator __first, const_iterator __last);
+             ^
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:18:52 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:61:7: error: no matching member function for call to 'erase'
+                                v.erase(v[i]);
+                                ~~^~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:759:40: note: candidate function not viable: no known conversion from 'std::__1::__vector_base<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >::value_type' (aka 'std::__1::basic_string<char>') to 'std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > >::const_iterator' (aka '__wrap_iter<const std::__1::basic_string<char> *>') for 1st argument
+    _LIBCPP_INLINE_VISIBILITY iterator erase(const_iterator __position);
+                                       ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:760:14: note: candidate function not viable: requires 2 arguments, but 1 was provided
+    iterator erase(const_iterator __first, const_iterator __last);
+             ^
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:19:10 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:21:03 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:21:18 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+13:21:42 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:24:01 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:25:09 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:26:00 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:26:30 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:28:46 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:29:15 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:30:08 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:30:19 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:30:30 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:30:45 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:42:15 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:17:10: error: type-id cannot have a name
+        map<int string> Vector2MapWCount(const vector<string>& v) {
+                ^~~~~~
+../src/first.cpp:17:2: error: too few template arguments for class template 'map'
+        map<int string> Vector2MapWCount(const vector<string>& v) {
+        ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:873:28: note: template is declared here
+class _LIBCPP_TEMPLATE_VIS map
+                           ^
+2 errors generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:42:36 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:19:2: warning: control reaches end of non-void function [-Wreturn-type]
+        }
+        ^
+1 warning generated.
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:45:44 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:17:11: error: expected expression
+        map<int, <string>> Vector2MapWCount(const vector<string>& v) {
+                 ^
+../src/first.cpp:17:12: error: unexpected type name 'string': expected expression
+        map<int, <string>> Vector2MapWCount(const vector<string>& v) {
+                  ^
+../src/first.cpp:24:10: error: no viable conversion from returned value of type 'const vector<std::__1::string>' (aka 'const vector<basic_string<char, char_traits<char>, allocator<char> > >') to function return type 'int'
+                return words;
+                       ^~~~~
+3 errors generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:45:58 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:17:11: error: expected expression
+        map<int, <string>> Vector2MapWCount(const vector<string>& v) {
+                 ^
+../src/first.cpp:17:12: error: unexpected type name 'string': expected expression
+        map<int, <string>> Vector2MapWCount(const vector<string>& v) {
+                  ^
+../src/first.cpp:24:10: error: no viable conversion from returned value of type 'const vector<std::__1::string>' (aka 'const vector<basic_string<char, char_traits<char>, allocator<char> > >') to function return type 'int'
+                return words;
+                       ^~~~~
+3 errors generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:46:00 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:17:11: error: expected expression
+        map<int, <string>> Vector2MapWCount(const vector<string>& v) {
+                 ^
+../src/first.cpp:17:12: error: unexpected type name 'string': expected expression
+        map<int, <string>> Vector2MapWCount(const vector<string>& v) {
+                  ^
+../src/first.cpp:23:10: error: no viable conversion from returned value of type 'const vector<std::__1::string>' (aka 'const vector<basic_string<char, char_traits<char>, allocator<char> > >') to function return type 'int'
+                return words;
+                       ^~~~~
+3 errors generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:46:10 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:53:47 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:24:18: error: invalid range expression of type 'std::__1::pair<const int, std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > >'; no viable 'begin' function available
+                        for (auto & s : l) {
+                                      ^ ~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/initializer_list:100:1: note: candidate template ignored: could not match 'initializer_list' against 'pair'
+begin(initializer_list<_Ep> __il) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1645:1: note: candidate template ignored: could not match '_Tp [_Np]' against 'std::__1::pair<const int, std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > >'
+begin(_Tp (&__array)[_Np])
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1663:1: note: candidate template ignored: substitution failure [with _Cp = std::__1::pair<const int, std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > >]: no member named 'begin' in 'std::__1::pair<const int, std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > >'
+begin(_Cp& __c) -> decltype(__c.begin())
+^                               ~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1671:1: note: candidate template ignored: substitution failure [with _Cp = std::__1::pair<const int, std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > >]: no member named 'begin' in 'std::__1::pair<const int, std::__1::vector<std::__1::basic_string<char>, std::__1::allocator<std::__1::basic_string<char> > > >'
+begin(const _Cp& __c) -> decltype(__c.begin())
+^                                     ~~~~~
+1 error generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:54:06 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:24:16: warning: unused variable 's' [-Wunused-variable]
+                        for (auto & s : l.second) {
+                                    ^
+1 warning generated.
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+13:58:03 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:00:06 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:01:03 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:01:22 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:05:48 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:06:12 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:06:17 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:06:25 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:08:45 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:08:52 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:09:06 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:09:11 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:09:19 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:09:58 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:09:59 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:16:30 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:16:45 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:18:08 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:18:35 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:18:44 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:22:09 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:38:36 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+14:39:08 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:44:20 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:44:20 **** Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:7:8: error: subscripted value is not an array, pointer, or vector
+                array[i] = stoi (argv[i + 1]);
+                ~~~~~^~
+../src/second.cpp:8:16: error: subscripted value is not an array, pointer, or vector
+                cout << array[i] << endl;
+                        ~~~~~^~
+2 errors generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:44:27 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:44:28 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:7:8: error: subscripted value is not an array, pointer, or vector
+                array[i] = stoi (argv[i + 1]);
+                ~~~~~^~
+../src/second.cpp:8:16: error: subscripted value is not an array, pointer, or vector
+                cout << array[i];
+                        ~~~~~^~
+2 errors generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:44:52 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:44:53 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:7:8: error: subscripted value is not an array, pointer, or vector
+                array[i] = stoi (argv[i + 1]);
+                ~~~~~^~
+1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:45:25 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:45:25 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+14:45:39 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:45:40 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+14:45:47 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+14:45:53 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+14:56:05 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:6:12: error: variable-sized object may not be initialized
+        int array[n] = {1, 2, -3, 4, 5, 6, -7, 8, 9, 10};
+                  ^
+../src/second.cpp:16:7: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for (auto& a : array) {
+             ^
+../src/second.cpp:16:15: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (auto& a : array) {
+                     ^
+2 warnings and 1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:56:24 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:7:13: error: expected expression
+        array[n] = {1, 2, -3, 4, 5, 6, -7, 8, 9, 10};
+                   ^
+../src/second.cpp:17:7: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for (auto& a : array) {
+             ^
+../src/second.cpp:17:15: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (auto& a : array) {
+                     ^
+2 warnings and 1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:56:51 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:56:51 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:7:13: error: expected expression
+        array[n] = {1, 2, -3, 4, 5, 6, -7, 8, 9, 10};
+                   ^
+../src/second.cpp:20:2: error: expected unqualified-id
+        return 0;
+        ^
+../src/second.cpp:21:1: error: extraneous closing brace ('}')
+}
+^
+3 errors generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:57:02 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:57:03 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:7:13: error: expected expression
+        array[n] = {1, 2, -3, 4, 5, 6, -7, 8, 9, 10};
+                   ^
+1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:57:15 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:57:15 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:6:12: error: variable-sized object may not be initialized
+        int array[n] = {1, 2, -3, 4, 5, 6, -7, 8, 9, 10};
+                  ^
+1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:57:22 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:57:23 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+14:58:25 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+15:02:42 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+15:03:04 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+15:03:12 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:6:6: warning: unused variable 'counter' [-Wunused-variable]
+        int counter = 0;
+            ^
+1 warning generated.
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+15:03:23 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+15:03:36 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+15:14:20 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+15:14:21 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:18:31: error: member reference base type 'int [10]' is not a structure or union
+        for (int i = 0; i < n - array.size(); i++){
+                                ~~~~~^~~~~
+1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:14:36 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+15:14:37 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:5:2: error: use of undeclared identifier 'n'
+        n = 10;
+        ^
+../src/second.cpp:8:22: error: use of undeclared identifier 'n'
+        for (int i = 0; i < n; ++i) {
+                            ^
+../src/second.cpp:11:14: error: use of undeclared identifier 'n'
+                        while(j < n-1) {
+                                  ^
+../src/second.cpp:18:22: error: use of undeclared identifier 'n'
+        for (int i = 0; i < n - counter; i++){
+                            ^
+4 errors generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:14:40 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+15:14:41 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:5:2: error: use of undeclared identifier 'n'
+        n = 10;
+        ^
+../src/second.cpp:8:22: error: use of undeclared identifier 'n'
+        for (int i = 0; i < n; ++i) {
+                            ^
+../src/second.cpp:11:14: error: use of undeclared identifier 'n'
+                        while(j < n-1) {
+                                  ^
+../src/second.cpp:18:22: error: use of undeclared identifier 'n'
+        for (int i = 0; i < n - counter; i++){
+                            ^
+4 errors generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:14:49 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+15:14:49 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+15:27:19 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+15:27:20 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:10:24: error: reference to non-static member function must be called; did you mean to call it with no arguments?
+        for (int i = 0; i < s.size; ++i) {
+                            ~~^~~~
+                                  ()
+../src/second.cpp:24:2: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+        realloc(array, n - counter);
+        ^~~~~~~ ~~~~~~~~~~~~~~~~~~
+1 warning and 1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:27:32 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+15:27:33 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:20:2: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+        realloc(array, n - counter);
+        ^~~~~~~ ~~~~~~~~~~~~~~~~~~
+1 warning generated.
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+15:28:12 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+15:28:13 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+15:28:19 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+15:28:30 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+15:28:38 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+15:29:58 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+15:36:53 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:56:27: error: extra qualification on member 'parse'
+vector <string> Solution::parse(const string& s) {
+                ~~~~~~~~~~^
+../src/first.cpp:56:27: error: class member cannot be redeclared
+../src/first.cpp:50:18: note: previous definition is here
+        vector <string> parse(const string& s) {
+                        ^
+../src/first.cpp:77:26: error: extra qualification on member 'eraser'
+vector<string> Solution::eraser() {
+               ~~~~~~~~~~^
+../src/first.cpp:105:2: error: expected '}'
+}
+ ^
+../src/first.cpp:10:16: note: to match this '{'
+class Solution {
+               ^
+../src/first.cpp:51:23: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+        vector<string> eraser();
+                             ^~
+../src/first.cpp:51:23: note: remove parentheses to declare a variable
+        vector<string> eraser();
+                             ^~
+../src/first.cpp:105:2: error: expected ';' after class
+}
+ ^
+ ;
+1 warning and 5 errors generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:36:55 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+15:37:27 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+../src/first.cpp:15:12: error: use of undeclared identifier 'parse'
+                _words = parse(p);
+                         ^
+../src/first.cpp:16:13: error: use of undeclared identifier 'parse'
+                _banned = parse(b);
+                          ^
+2 errors generated.
+make: *** [src/first.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:37:28 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+15:38:13 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+15:38:14 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+15:40:59 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+15:41:01 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+15:48:26 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+15:48:28 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+15:48:31 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+15:48:49 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+15:49:22 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+15:49:23 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+15:49:25 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+15:49:48 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+15:50:21 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+15:50:22 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+15:50:25 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+15:51:31 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+16:00:33 **** Incremental Build of configuration Debug for project first ****
+make all 
+Building file: ../src/first.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/first.d" -MT"src/first.o" -o "src/first.o" "../src/first.cpp"
+Finished building: ../src/first.cpp
+ 
+Building target: first
+Invoking: MacOS X C++ Linker
+g++  -o "first"  ./src/first.o   
+Finished building target: first
+ 
+16:00:35 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:19:20: error: no matching function for call to 'realloc'
+         *array = (int *) realloc( *array, (n - counter) * sizeof(int));
+                          ^~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/malloc/_malloc.h:43:7: note: candidate function not viable: no known conversion from 'int' to 'void *' for 1st argument; remove *
+void    *realloc(void *__ptr, size_t __size) __result_use_check __alloc_size(2);
+         ^
+1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:01:00 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+16:01:00 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:19:9: error: array type 'int [10]' is not assignable
+         array = (int *) realloc( array, (n - counter) * sizeof(int));
+         ~~~~~ ^
+1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:01:07 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+16:01:08 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:19:9: error: array type 'int [10]' is not assignable
+         array = realloc( array, (n - counter) * sizeof(int));
+         ~~~~~ ^
+1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:01:55 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:22:46 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:23:27 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:26:04 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:10:6: error: redefinition of 'counter'
+        int counter = 1;
+            ^
+../src/second.cpp:6:6: note: previous definition is here
+        int counter = 0;
+            ^
+1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:26:31 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:26:53 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+16:34:43 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:35:49 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:35:58 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+16:36:08 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:8:23: error: no matching function for call to 'calloc'
+        int *array = (int *) calloc(sizeof(int));
+                             ^~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/malloc/_malloc.h:41:7: note: candidate function not viable: requires 2 arguments, but 1 was provided
+void    *calloc(size_t __count, size_t __size) __result_use_check __alloc_size(1,2);
+         ^
+1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:36:16 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:36:25 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+16:37:10 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:37:28 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:38:11 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+16:38:39 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+16:38:49 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+16:39:05 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:39:18 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:39:26 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+16:39:42 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:40:00 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+16:41:28 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:5:6: warning: unused variable 'n' [-Wunused-variable]
+        int n = 10;
+            ^
+../src/second.cpp:6:6: warning: unused variable 'counter' [-Wunused-variable]
+        int counter = 0;
+            ^
+2 warnings generated.
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:41:41 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:6:6: warning: unused variable 'counter' [-Wunused-variable]
+        int counter = 0;
+            ^
+../src/second.cpp:5:6: warning: unused variable 'n' [-Wunused-variable]
+        int n = 10;
+            ^
+2 warnings generated.
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:41:55 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+16:42:06 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+16:42:26 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:34:49: error: expected '(' for function-style cast or type construction
+        for (int i = 0; i < sizeof(array) / siezof(*int); i++){
+                                                    ~~~^
+1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:43:02 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:5:6: warning: unused variable 'n' [-Wunused-variable]
+        int n = 10;
+            ^
+../src/second.cpp:6:6: warning: unused variable 'counter' [-Wunused-variable]
+        int counter = 0;
+            ^
+2 warnings generated.
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:43:11 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+16:43:28 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:6:6: warning: unused variable 'counter' [-Wunused-variable]
+        int counter = 0;
+            ^
+../src/second.cpp:5:6: warning: unused variable 'n' [-Wunused-variable]
+        int n = 10;
+            ^
+2 warnings generated.
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:44:37 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:44:45 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+16:45:45 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:46:11 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:47:50 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:48:14 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:15:11: error: assigning to 'int *' from incompatible type 'void *'
+                array = realloc (array, sizeof(int) * 10);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:48:19 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:48:59 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:49:16 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+16:50:23 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:30:27: error: member reference base type 'int' is not a structure or union
+        for (int i = 0; i < array->size(); i++){
+                            ~~~~~^ ~~~~
+1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:52:08 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+16:52:09 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+20:55:28 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+20:55:51 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+20:56:18 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+20:56:22 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+20:57:17 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+20:57:37 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+20:57:59 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+20:58:08 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+21:02:24 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+21:04:09 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+21:04:49 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+21:04:57 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+21:05:50 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:6:8: error: cannot initialize a variable of type 'int *' with an rvalue of type 'void *'
+        int * array = malloc(1000000 * sizeof(int));
+              ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:05:56 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:6:8: error: cannot initialize a variable of type 'int *' with an rvalue of type 'void *'
+        int * array = malloc(1000000 * sizeof(int));
+              ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:06:36 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+21:17:18 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+21:17:25 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+21:17:49 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+21:17:55 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+21:24:00 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+../src/second.cpp:31:11: error: use of class template 'array' requires template arguments
+                cout << array[i] << " ";
+                        ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:223:64: note: template is declared here
+template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                             ^
+../src/second.cpp:33:7: error: use of class template 'array' requires template arguments
+        free(array);
+             ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:223:64: note: template is declared here
+template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                             ^
+2 errors generated.
+make: *** [src/second.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:24:11 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+21:24:21 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+21:25:20 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+21:32:26 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+22:36:11 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+22:37:09 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+22:37:17 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:37:19 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:37:27 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:37:46 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:37:52 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:38:04 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:38:08 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:38:10 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:38:11 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:38:12 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:38:13 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:38:14 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:38:17 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:38:22 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:38:23 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:38:23 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:38:26 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:39:53 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+22:40:05 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:40:56 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+22:41:06 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:41:19 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:42:01 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:42:11 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:42:15 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:42:19 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:43:39 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+22:43:48 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:43:54 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:43:56 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:44:03 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:44:58 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:45:08 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:45:11 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:45:38 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:46:23 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+22:46:27 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:46:42 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:46:47 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:46:56 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+22:49:19 **** Incremental Build of configuration Debug for project second ****
+make all 
+Building file: ../src/second.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/second.d" -MT"src/second.o" -o "src/second.o" "../src/second.cpp"
+Finished building: ../src/second.cpp
+ 
+Building target: second
+Invoking: MacOS X C++ Linker
+g++  -o "second"  ./src/second.o   
+Finished building target: second
+ 
+22:55:43 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+22:55:44 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:55:44 **** Build of configuration Debug for project secondVector ****
+make all 
+Building file: ../src/secondVector.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/secondVector.d" -MT"src/secondVector.o" -o "src/secondVector.o" "../src/secondVector.cpp"
+../src/secondVector.cpp:8:9: error: use of undeclared identifier 'len'
+        cin >> len;
+               ^
+../src/secondVector.cpp:9:21: error: unknown type name 'len'
+        vector <int> array(len);
+                           ^
+../src/secondVector.cpp:9:20: warning: parentheses were disambiguated as a function declaration [-Wvexing-parse]
+        vector <int> array(len);
+                          ^~~~~
+../src/secondVector.cpp:9:21: note: add a pair of parentheses to declare a variable
+        vector <int> array(len);
+                           ^
+                           (
+../src/secondVector.cpp:10:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+2 warnings and 2 errors generated.
+make: *** [src/secondVector.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:55:55 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+22:55:55 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:55:56 **** Incremental Build of configuration Debug for project secondVector ****
+make all 
+Building file: ../src/secondVector.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/secondVector.d" -MT"src/secondVector.o" -o "src/secondVector.o" "../src/secondVector.cpp"
+../src/secondVector.cpp:8:9: error: use of undeclared identifier 'len'
+        cin >> len;
+               ^
+../src/secondVector.cpp:9:21: error: use of undeclared identifier 'len'
+        vector <int> array[len];
+                           ^
+../src/secondVector.cpp:10:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+1 warning and 2 errors generated.
+make: *** [src/secondVector.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:56:05 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+22:56:06 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:56:06 **** Incremental Build of configuration Debug for project secondVector ****
+make all 
+Building file: ../src/secondVector.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/secondVector.d" -MT"src/secondVector.o" -o "src/secondVector.o" "../src/secondVector.cpp"
+../src/secondVector.cpp:8:9: error: use of undeclared identifier 'len'
+        cin >> len;
+               ^
+../src/secondVector.cpp:9:21: error: unknown type name 'len'
+        vector <int> array(len)
+                           ^
+../src/secondVector.cpp:9:20: warning: parentheses were disambiguated as a function declaration [-Wvexing-parse]
+        vector <int> array(len)
+                          ^~~~~
+../src/secondVector.cpp:9:21: note: add a pair of parentheses to declare a variable
+        vector <int> array(len)
+                           ^
+                           (
+../src/secondVector.cpp:9:25: error: expected ';' at end of declaration
+        vector <int> array(len)
+                               ^
+                               ;
+1 warning and 3 errors generated.
+make: *** [src/secondVector.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:56:55 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+22:56:56 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:56:57 **** Incremental Build of configuration Debug for project secondVector ****
+make all 
+Building file: ../src/secondVector.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/secondVector.d" -MT"src/secondVector.o" -o "src/secondVector.o" "../src/secondVector.cpp"
+../src/secondVector.cpp:8:9: error: use of undeclared identifier 'len'
+        cin >> len;
+               ^
+../src/secondVector.cpp:9:21: error: unknown type name 'len'
+        vector <int> array(len);
+                           ^
+../src/secondVector.cpp:9:20: warning: parentheses were disambiguated as a function declaration [-Wvexing-parse]
+        vector <int> array(len);
+                          ^~~~~
+../src/secondVector.cpp:9:21: note: add a pair of parentheses to declare a variable
+        vector <int> array(len);
+                           ^
+                           (
+../src/secondVector.cpp:10:13: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int d : array) {
+                   ^
+2 warnings and 2 errors generated.
+make: *** [src/secondVector.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:57:13 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+22:57:14 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:57:14 **** Incremental Build of configuration Debug for project secondVector ****
+make all 
+Building file: ../src/secondVector.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/secondVector.d" -MT"src/secondVector.o" -o "src/secondVector.o" "../src/secondVector.cpp"
+../src/secondVector.cpp:10:13: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int d : array) {
+                   ^
+../src/secondVector.cpp:10:11: warning: unused variable 'd' [-Wunused-variable]
+        for (int d : array) {
+                 ^
+2 warnings generated.
+Finished building: ../src/secondVector.cpp
+ 
+Building target: secondVector
+Invoking: MacOS X C++ Linker
+g++  -o "secondVector"  ./src/secondVector.o   
+Finished building target: secondVector
+ 
+22:58:32 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+22:58:32 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:58:33 **** Incremental Build of configuration Debug for project secondVector ****
+make all 
+make: Nothing to be done for `all'.
+22:59:44 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+22:59:44 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+22:59:45 **** Incremental Build of configuration Debug for project secondVector ****
+make all 
+Building file: ../src/secondVector.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/secondVector.d" -MT"src/secondVector.o" -o "src/secondVector.o" "../src/secondVector.cpp"
+../src/secondVector.cpp:10:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+../src/secondVector.cpp:13:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+../src/secondVector.cpp:14:26: error: calling a private constructor of class 'std::__1::__wrap_iter<const int *>'
+                if (d < 0) array.erase(&d);
+                                       ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:1422:60: note: declared private here
+    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG __wrap_iter(iterator_type __x) _NOEXCEPT_DEBUG : __i(__x) {}
+                                                           ^
+../src/secondVector.cpp:16:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+3 warnings and 1 error generated.
+make: *** [src/secondVector.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:00:19 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+23:00:20 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+23:00:21 **** Incremental Build of configuration Debug for project secondVector ****
+make all 
+Building file: ../src/secondVector.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/secondVector.d" -MT"src/secondVector.o" -o "src/secondVector.o" "../src/secondVector.cpp"
+../src/secondVector.cpp:10:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+../src/secondVector.cpp:13:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+../src/secondVector.cpp:16:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+3 warnings generated.
+Finished building: ../src/secondVector.cpp
+ 
+Building target: secondVector
+Invoking: MacOS X C++ Linker
+g++  -o "secondVector"  ./src/secondVector.o   
+Finished building target: secondVector
+ 
+23:00:58 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+23:00:58 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+23:00:59 **** Incremental Build of configuration Debug for project secondVector ****
+make all 
+Building file: ../src/secondVector.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/secondVector.d" -MT"src/secondVector.o" -o "src/secondVector.o" "../src/secondVector.cpp"
+../src/secondVector.cpp:10:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+../src/secondVector.cpp:13:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+../src/secondVector.cpp:14:42: error: indirection requires pointer operand ('int' invalid)
+                if (d < 0) array.erase(array.begin() + *d);
+                                                       ^~
+../src/secondVector.cpp:16:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+3 warnings and 1 error generated.
+make: *** [src/secondVector.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:01:09 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+23:01:10 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+23:01:10 **** Incremental Build of configuration Debug for project secondVector ****
+make all 
+Building file: ../src/secondVector.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/secondVector.d" -MT"src/secondVector.o" -o "src/secondVector.o" "../src/secondVector.cpp"
+../src/secondVector.cpp:10:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+../src/secondVector.cpp:13:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+../src/secondVector.cpp:16:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+3 warnings generated.
+Finished building: ../src/secondVector.cpp
+ 
+Building target: secondVector
+Invoking: MacOS X C++ Linker
+g++  -o "secondVector"  ./src/secondVector.o   
+Finished building target: secondVector
+ 
+23:03:59 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+23:04:00 **** Incremental Build of configuration Debug for project second ****
+make all 
+make: Nothing to be done for `all'.
+23:04:00 **** Incremental Build of configuration Debug for project secondVector ****
+make all 
+Building file: ../src/secondVector.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/secondVector.d" -MT"src/secondVector.o" -o "src/secondVector.o" "../src/secondVector.cpp"
+../src/secondVector.cpp:10:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+../src/secondVector.cpp:18:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+2 warnings generated.
+Finished building: ../src/secondVector.cpp
+ 
+Building target: secondVector
+Invoking: MacOS X C++ Linker
+g++  -o "secondVector"  ./src/secondVector.o   
+Finished building target: secondVector
+ 
+23:04:14 **** Incremental Build of configuration Debug for project secondVector ****
+make all 
+Building file: ../src/secondVector.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/secondVector.d" -MT"src/secondVector.o" -o "src/secondVector.o" "../src/secondVector.cpp"
+../src/secondVector.cpp:10:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+../src/secondVector.cpp:19:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+2 warnings generated.
+Finished building: ../src/secondVector.cpp
+ 
+Building target: secondVector
+Invoking: MacOS X C++ Linker
+g++  -o "secondVector"  ./src/secondVector.o   
+Finished building target: secondVector
+ 
+23:04:33 **** Incremental Build of configuration Debug for project secondVector ****
+make all 
+Building file: ../src/secondVector.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/secondVector.d" -MT"src/secondVector.o" -o "src/secondVector.o" "../src/secondVector.cpp"
+../src/secondVector.cpp:10:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+../src/secondVector.cpp:19:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+2 warnings generated.
+Finished building: ../src/secondVector.cpp
+ 
+Building target: secondVector
+Invoking: MacOS X C++ Linker
+g++  -o "secondVector"  ./src/secondVector.o   
+Finished building target: secondVector
+ 
+23:04:46 **** Incremental Build of configuration Debug for project secondVector ****
+make all 
+make: Nothing to be done for `all'.
+23:05:23 **** Incremental Build of configuration Debug for project secondVector ****
+make all 
+Building file: ../src/secondVector.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/secondVector.d" -MT"src/secondVector.o" -o "src/secondVector.o" "../src/secondVector.cpp"
+../src/secondVector.cpp:10:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+../src/secondVector.cpp:19:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (int& d : array) {
+                    ^
+2 warnings generated.
+Finished building: ../src/secondVector.cpp
+ 
+Building target: secondVector
+Invoking: MacOS X C++ Linker
+g++  -o "secondVector"  ./src/secondVector.o   
+Finished building target: secondVector
+ 

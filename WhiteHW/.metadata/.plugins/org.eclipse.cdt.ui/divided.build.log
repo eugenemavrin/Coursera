@@ -1,0 +1,11 @@
+22:46:36 **** Incremental Build of configuration Debug for project divided ****
+make all 
+Building target: divided
+Invoking: MacOS X C++ Linker
+g++  -o "divided"   
+clang: error: no input files
+make: *** [divided] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+22:46:37 Build Failed. 1 errors, 0 warnings. (took 195ms)
+
