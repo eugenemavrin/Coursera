@@ -84,7 +84,7 @@ void PrintVector(vector<string> v) {
 }
 
 int main() {
-	string paragraph = "hit hit ball Bob hit a a ball, the flew hit ball flew";
+	string paragraph = "bob hit hit ball Bob hit a a ball, the flew hit ball flew";
 	//getline(cin, paragraph);
 	string banned = "hit ball";
 
